@@ -1,0 +1,622 @@
+{
+  "version": "1.6.0-c2",
+  "title": "VCS Semantic Historical Timeline",
+  "methodology": {
+    "levels": [
+      "foundational",
+      "major",
+      "significant",
+      "detailed",
+      "source"
+    ],
+    "note": "Dates labeled approximate or traditional are not presented as exact chronology. Formal definitions are distinguished from earliest surviving witnesses and reform events."
+  },
+  "events": [
+    {
+      "id": "ot-patriarchs",
+      "year": -1900,
+      "label": "c. 1900–1700 BC",
+      "title": "Patriarchal age: Abraham, Isaac, Jacob",
+      "scope": "ot",
+      "category": "patriarchs",
+      "importance": "foundational",
+      "summary": "The ancestral narratives locate Israel’s beginnings in the patriarchs and the promises made to Abraham and his descendants.",
+      "source": "USCCB Genesis introduction",
+      "date_quality": "approximate",
+      "tags": [
+        "covenant"
+      ]
+    },
+    {
+      "id": "ot-exodus",
+      "year": -1250,
+      "label": "c. 13th c. BC",
+      "title": "Exodus and Sinai covenant",
+      "scope": "ot",
+      "category": "covenants",
+      "importance": "foundational",
+      "summary": "Israel’s deliverance from Egypt and covenant at Sinai form a central biblical pattern for salvation, law, worship, and later Christian typology.",
+      "source": "USCCB Exodus introduction",
+      "date_quality": "approximate",
+      "tags": [
+        "moses"
+      ]
+    },
+    {
+      "id": "ot-conquest",
+      "year": -1200,
+      "label": "c. 13th–12th c. BC",
+      "title": "Settlement / conquest traditions",
+      "scope": "ot",
+      "category": "biblical_events",
+      "importance": "major",
+      "summary": "Joshua presents Israel taking possession of Canaan; Judges follows the pre-monarchic period.",
+      "source": "USCCB Historical Books introduction",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "ot-david",
+      "year": -1000,
+      "label": "c. 1000 BC",
+      "title": "Davidic kingdom and covenant",
+      "scope": "ot",
+      "category": "covenants",
+      "importance": "foundational",
+      "summary": "David’s kingship and dynasty become a major foundation for later messianic expectation.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": [
+        "messianic",
+        "kingdom"
+      ]
+    },
+    {
+      "id": "ot-divided",
+      "year": -930,
+      "label": "c. 930 BC",
+      "title": "Kingdom divided: Israel and Judah",
+      "scope": "ot",
+      "category": "kings",
+      "importance": "major",
+      "summary": "After Solomon the monarchy divides into northern Israel and southern Judah.",
+      "source": "USCCB Historical Books introduction",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "ot-assyria",
+      "year": -722,
+      "label": "722/721 BC",
+      "title": "Fall of the Northern Kingdom",
+      "scope": "ot",
+      "category": "empires",
+      "importance": "major",
+      "summary": "Assyria destroys the Northern Kingdom of Israel.",
+      "source": "USCCB Historical Books introduction",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ot-judah",
+      "year": -587,
+      "label": "587 BC",
+      "title": "Fall of Jerusalem and Babylonian exile",
+      "scope": "ot",
+      "category": "empires",
+      "importance": "foundational",
+      "summary": "Babylon destroys Jerusalem and Judah enters exile.",
+      "source": "USCCB Historical Books introduction",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ot-return",
+      "year": -538,
+      "label": "538 BC onward",
+      "title": "Persian period and return from exile",
+      "scope": "ot",
+      "category": "biblical_events",
+      "importance": "major",
+      "summary": "Persian rule permits Judean restoration; Ezra-Nehemiah preserve major restoration traditions.",
+      "source": "",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ot-second-temple",
+      "year": -515,
+      "label": "515 BC",
+      "title": "Second Temple completed",
+      "scope": "ot",
+      "category": "biblical_events",
+      "importance": "major",
+      "summary": "The rebuilt Temple anchors the post-exilic and Second Temple period.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "ot-macc",
+      "year": -175,
+      "label": "175–164 BC",
+      "title": "Antiochus IV and Maccabean crisis",
+      "scope": "ot",
+      "category": "empires",
+      "importance": "major",
+      "summary": "Seleucid persecution and resistance form the setting of 1–2 Maccabees.",
+      "source": "USCCB 1 Maccabees 1 notes",
+      "date_quality": "anchored",
+      "tags": [
+        "deuterocanon"
+      ]
+    },
+    {
+      "id": "ot-dedication",
+      "year": -164,
+      "label": "164 BC",
+      "title": "Temple rededication",
+      "scope": "ot",
+      "category": "biblical_events",
+      "importance": "major",
+      "summary": "The Maccabean restoration of Temple worship stands near the close of the Old Testament historical horizon.",
+      "source": "",
+      "date_quality": "anchored",
+      "tags": [
+        "deuterocanon"
+      ]
+    },
+    {
+      "id": "nt-incarnation",
+      "year": -4,
+      "label": "c. 6–4 BC",
+      "title": "Birth of Jesus Christ",
+      "scope": "apostolic",
+      "category": "jesus",
+      "importance": "foundational",
+      "summary": "The Incarnation opens the climactic fulfillment of Israel’s messianic hope.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": [
+        "messianic"
+      ]
+    },
+    {
+      "id": "nt-ministry",
+      "year": 27,
+      "label": "c. AD 27–30",
+      "title": "Public ministry of Jesus",
+      "scope": "apostolic",
+      "category": "jesus",
+      "importance": "foundational",
+      "summary": "Jesus proclaims the Kingdom, teaches, heals, gathers disciples, and prepares the New Covenant.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "nt-paschal",
+      "year": 30,
+      "label": "c. AD 30",
+      "title": "Passion, Resurrection and Ascension",
+      "scope": "apostolic",
+      "category": "jesus",
+      "importance": "foundational",
+      "summary": "The Paschal Mystery stands at the center of Christian faith and apostolic preaching.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": [
+        "messianic"
+      ]
+    },
+    {
+      "id": "nt-pentecost",
+      "year": 30,
+      "label": "c. AD 30",
+      "title": "Pentecost and public apostolic mission",
+      "scope": "apostolic",
+      "category": "apostles",
+      "importance": "foundational",
+      "summary": "The Holy Spirit empowers the apostolic witness and the Church’s mission.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "nt-jerusalem",
+      "year": 49,
+      "label": "c. AD 49",
+      "title": "Council of Jerusalem",
+      "scope": "apostolic",
+      "category": "councils",
+      "importance": "major",
+      "summary": "Acts 15 records an apostolic council resolving a major question concerning Gentile Christians.",
+      "source": "Acts 15",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "nt-peter-paul",
+      "year": 64,
+      "label": "c. AD 64–67",
+      "title": "Martyrdoms of Peter and Paul",
+      "scope": "apostolic",
+      "category": "martyrs",
+      "importance": "major",
+      "summary": "Ancient Christian tradition locates the martyrdoms of Peter and Paul at Rome under Nero.",
+      "source": "",
+      "date_quality": "traditional",
+      "tags": []
+    },
+    {
+      "id": "nt-temple70",
+      "year": 70,
+      "label": "AD 70",
+      "title": "Destruction of Jerusalem and the Second Temple",
+      "scope": "apostolic",
+      "category": "world",
+      "importance": "major",
+      "summary": "Roman forces destroy Jerusalem and the Temple, reshaping Jewish and Christian history.",
+      "source": "",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "nt-clement",
+      "year": 96,
+      "label": "c. AD 96",
+      "title": "1 Clement",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "major",
+      "summary": "The Roman church’s letter known as 1 Clement is among the earliest surviving post-apostolic Christian writings.",
+      "source": "Open Apostolic Fathers / ANF",
+      "date_quality": "approximate",
+      "tags": [
+        "succession"
+      ]
+    },
+    {
+      "id": "nt-ignatius",
+      "year": 107,
+      "label": "c. AD 107",
+      "title": "Ignatius of Antioch’s letters",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "major",
+      "summary": "Ignatius writes to churches while being taken to martyrdom, witnessing to bishop-centered ecclesial life and Eucharistic faith.",
+      "source": "Open Apostolic Fathers / ANF",
+      "date_quality": "approximate",
+      "tags": [
+        "eucharist",
+        "bishop"
+      ]
+    },
+    {
+      "id": "nt-polycarp",
+      "year": 110,
+      "label": "early 2nd c.",
+      "title": "Polycarp to the Philippians",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "significant",
+      "summary": "Polycarp preserves an early pastoral witness closely connected with the apostolic generation.",
+      "source": "Open Apostolic Fathers / ANF",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "nt-justin",
+      "year": 155,
+      "label": "c. AD 155",
+      "title": "Justin Martyr’s First Apology",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "major",
+      "summary": "Justin describes Christian worship, Baptism, and Eucharistic practice in second-century Rome.",
+      "source": "ANF / New Advent",
+      "date_quality": "approximate",
+      "tags": [
+        "eucharist",
+        "liturgy"
+      ]
+    },
+    {
+      "id": "nt-irenaeus",
+      "year": 180,
+      "label": "c. AD 180",
+      "title": "Irenaeus, Against Heresies",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "major",
+      "summary": "Irenaeus argues from apostolic tradition, succession, Scripture, and the rule of faith against Gnostic systems.",
+      "source": "ANF / New Advent",
+      "date_quality": "approximate",
+      "tags": [
+        "succession"
+      ]
+    },
+    {
+      "id": "ch-nicaea",
+      "year": 325,
+      "label": "AD 325",
+      "title": "First Council of Nicaea",
+      "scope": "church",
+      "category": "councils",
+      "importance": "foundational",
+      "summary": "The council responds to Arianism and confesses the Son’s true divinity.",
+      "source": "Vatican / NPNF",
+      "date_quality": "anchored",
+      "tags": [
+        "doctrine"
+      ]
+    },
+    {
+      "id": "ch-constantinople",
+      "year": 381,
+      "label": "AD 381",
+      "title": "First Council of Constantinople",
+      "scope": "church",
+      "category": "councils",
+      "importance": "major",
+      "summary": "The Nicene faith is reaffirmed and the Church’s confession of the Holy Spirit is articulated against contemporary errors.",
+      "source": "NPNF",
+      "date_quality": "anchored",
+      "tags": [
+        "doctrine"
+      ]
+    },
+    {
+      "id": "ch-ephesus",
+      "year": 431,
+      "label": "AD 431",
+      "title": "Council of Ephesus",
+      "scope": "church",
+      "category": "councils",
+      "importance": "major",
+      "summary": "The council defends the unity of Christ’s person and the title Theotokos, Mother of God.",
+      "source": "Vatican",
+      "date_quality": "anchored",
+      "tags": [
+        "mary",
+        "christology"
+      ]
+    },
+    {
+      "id": "ch-chalcedon",
+      "year": 451,
+      "label": "AD 451",
+      "title": "Council of Chalcedon",
+      "scope": "church",
+      "category": "councils",
+      "importance": "major",
+      "summary": "Chalcedon confesses the one person of Christ in two natures, divine and human.",
+      "source": "Vatican",
+      "date_quality": "anchored",
+      "tags": [
+        "christology"
+      ]
+    },
+    {
+      "id": "ch-east-sep",
+      "year": 451,
+      "label": "after AD 451",
+      "title": "Post-Chalcedonian separations",
+      "scope": "church",
+      "category": "schisms",
+      "importance": "significant",
+      "summary": "Disputes surrounding Chalcedon contribute to enduring divisions among ancient Eastern Christian communities.",
+      "source": "Vatican II Unitatis redintegratio 13",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "ch-nicaea2",
+      "year": 787,
+      "label": "AD 787",
+      "title": "Second Council of Nicaea",
+      "scope": "church",
+      "category": "councils",
+      "importance": "major",
+      "summary": "The seventh ecumenical council addresses the iconoclast controversy and sacred images.",
+      "source": "NPNF / council sources",
+      "date_quality": "anchored",
+      "tags": [
+        "images"
+      ]
+    },
+    {
+      "id": "ch-eastwest",
+      "year": 1054,
+      "label": "AD 1054 (long process)",
+      "title": "East–West rupture conventionally dated to 1054",
+      "scope": "church",
+      "category": "schisms",
+      "importance": "foundational",
+      "summary": "The dissolution of communion between Eastern patriarchates and Rome developed through a long historical process, conventionally associated with 1054.",
+      "source": "Vatican II Unitatis redintegratio 13",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "ch-gregorian",
+      "year": 1075,
+      "label": "11th c.",
+      "title": "Gregorian Reform",
+      "scope": "church",
+      "category": "reforms",
+      "importance": "significant",
+      "summary": "A broad medieval reform movement addressed clerical discipline, ecclesial governance, and freedom of the Church.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "ch-francis",
+      "year": 1209,
+      "label": "early 13th c.",
+      "title": "Mendicant renewal",
+      "scope": "church",
+      "category": "reforms",
+      "importance": "significant",
+      "summary": "Franciscan and Dominican movements become major forces of evangelical, pastoral, intellectual, and missionary renewal.",
+      "source": "",
+      "date_quality": "approximate",
+      "tags": []
+    },
+    {
+      "id": "ch-western-schism",
+      "year": 1378,
+      "label": "1378–1417",
+      "title": "Western Schism",
+      "scope": "church",
+      "category": "schisms",
+      "importance": "major",
+      "summary": "Competing papal claimants divide Western Christendom until the crisis is resolved at Constance.",
+      "source": "Vatican CTI Synodality 34",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ch-constance",
+      "year": 1414,
+      "label": "1414–1418",
+      "title": "Council of Constance and end of Western Schism",
+      "scope": "church",
+      "category": "councils",
+      "importance": "major",
+      "summary": "The council resolves the Western Schism; later conciliarist claims require careful distinction from Catholic teaching on primacy.",
+      "source": "Vatican CTI Synodality 34",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ch-reformation",
+      "year": 1517,
+      "label": "from 1517",
+      "title": "Protestant Reformation",
+      "scope": "church",
+      "category": "schisms",
+      "importance": "foundational",
+      "summary": "Western reform controversies lead to multiple ecclesial communities separating from the Roman See.",
+      "source": "Vatican II Unitatis redintegratio 13",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ch-trent",
+      "year": 1545,
+      "label": "1545–1563",
+      "title": "Council of Trent and Catholic Reform",
+      "scope": "church",
+      "category": "reforms",
+      "importance": "foundational",
+      "summary": "Trent clarifies disputed doctrine and advances major Catholic disciplinary and pastoral reforms in response to the Reformation crisis.",
+      "source": "Vatican CTI Synodality 35",
+      "date_quality": "anchored",
+      "tags": [
+        "councils"
+      ]
+    },
+    {
+      "id": "ch-vatican1",
+      "year": 1869,
+      "label": "1869–1870",
+      "title": "First Vatican Council",
+      "scope": "church",
+      "category": "councils",
+      "importance": "major",
+      "summary": "Vatican I treats revelation, faith and reason, and papal primacy and infallibility before being interrupted in 1870.",
+      "source": "Vatican / Benedict XVI 2012",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ch-vatican2",
+      "year": 1962,
+      "label": "1962–1965",
+      "title": "Second Vatican Council",
+      "scope": "church",
+      "category": "councils",
+      "importance": "foundational",
+      "summary": "Vatican II addresses the Church, revelation, liturgy, ecumenism, mission, religious freedom, and the Church in the modern world.",
+      "source": "Vatican",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "ch-cic1983",
+      "year": 1983,
+      "label": "1983",
+      "title": "1983 Code of Canon Law",
+      "scope": "church",
+      "category": "reforms",
+      "importance": "significant",
+      "summary": "The revised Latin Code implements legal renewal shaped by Vatican II.",
+      "source": "Vatican Code of Canon Law introduction",
+      "date_quality": "anchored",
+      "tags": []
+    },
+    {
+      "id": "src-didache",
+      "year": 90,
+      "label": "late 1st / early 2nd c.",
+      "title": "Didache",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "detailed",
+      "summary": "Early church-order text addressing Christian morals, Baptism, fasting, Eucharistic prayer, and community order.",
+      "source": "Open Apostolic Fathers / ANF",
+      "date_quality": "approximate",
+      "tags": [
+        "liturgy"
+      ]
+    },
+    {
+      "id": "src-smyr",
+      "year": 107,
+      "label": "c. AD 107",
+      "title": "Ignatius, Smyrnaeans",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "source",
+      "summary": "Primary-source witness useful for studying Eucharist, ecclesial unity, and the bishop.",
+      "source": "Open Apostolic Fathers",
+      "date_quality": "approximate",
+      "tags": [
+        "eucharist"
+      ]
+    },
+    {
+      "id": "src-justin66",
+      "year": 155,
+      "label": "c. AD 155",
+      "title": "Justin, First Apology 65–67",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "source",
+      "summary": "Primary-source section commonly studied for Baptism, Eucharist, and Sunday Christian worship.",
+      "source": "ANF / New Advent",
+      "date_quality": "approximate",
+      "tags": [
+        "eucharist",
+        "sunday"
+      ]
+    },
+    {
+      "id": "src-irenaeus3",
+      "year": 180,
+      "label": "c. AD 180",
+      "title": "Irenaeus, Against Heresies III",
+      "scope": "apostolic",
+      "category": "fathers",
+      "importance": "source",
+      "summary": "Primary-source material important for apostolic tradition, succession, Scripture, and public catholic teaching.",
+      "source": "ANF / New Advent",
+      "date_quality": "approximate",
+      "tags": [
+        "succession"
+      ]
+    }
+  ]
+}
