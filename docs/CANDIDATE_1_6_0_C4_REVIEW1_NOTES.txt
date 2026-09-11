@@ -1,0 +1,19 @@
+VCS Website Edition 1.6.0 Candidate 4 - Consolidated Review Correction 1
+
+This is a cumulative /docs build for the Test repository.
+
+Corrections from the first C4 review cycle:
+- Historical witnesses now deep-link by stable Source Library record ID.
+- Historical witnesses are earliest-first; 3 display initially with Show more.
+- Source Library exact-record links clear broad search state, scroll to, and highlight the target record.
+- Related Study Topics are compacted to 3 + Show more and weak whole-work matches are filtered more conservatively.
+- Provenance & licensing is presented as structured source metadata.
+- Source Library -> Timeline carries source/date context, opens source-level events, centers on a useful historical window, moves to Fathers when applicable, and highlights a matching event where available.
+- Study Topic Scripture ranges preserve the displayed range and add previous/next verse navigation while retaining verse-level relationship results.
+- Attributed Formation Sources vs Historical Witnesses wording is clarified.
+- Stale 1.5 Candidate 4 labels corrected to 1.6 Candidate 4.
+
+Approved behaviors preserved:
+- Source Library -> exact Study Topic deep links.
+- Attributed Formation Source external links.
+- Existing Timeline interaction/tooltip/stacking work.
