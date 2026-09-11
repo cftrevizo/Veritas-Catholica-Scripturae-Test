@@ -31,7 +31,7 @@ function timelineGridInterval(){
   // Choose only from the approved resolutions. The deciding constraint is
   // rendered pixel spacing: date labels must not overlap at the current zoom.
   if(!TLAYOUT)return 100;
-  const candidates=[500,250,100,75,50,25,10,1];
+  const candidates=[1000,500,250,100,75,50,25,10,1];
   const vr=timelineVisibleRange();
   const stage=document.querySelector('.visual-stage.timeline-scroll-mode');
   const width=Math.max(420,stage?.clientWidth||1000);
@@ -119,7 +119,7 @@ function updateTimelineEventScale(){
       t.setAttribute('x',x+10/z); t.setAttribute('y',y-8);
       t.setAttribute('transform',`translate(${x} ${y}) scale(${1/z} 1) translate(${-x} ${-y})`);
     }
-    t.style.fontSize='12px'; t.style.strokeWidth='2.4px';
+    t.style.fontSize='18px'; t.style.strokeWidth='2.8px';
   });
 }
 
@@ -127,7 +127,9 @@ function renderTimeline(){
   const {svg,g}=clearV(),ev=timelineFiltered();
   document.querySelector('.visual-stage')?.classList.add('timeline-scroll-mode');
   if(!ev.length){TLAYOUT=null;document.getElementById('visualMeta').innerHTML='<b>Semantic Timeline</b> · No events match the current filters.';return}
-  let min=Math.min(...ev.map(e=>e.year)),max=Math.max(...ev.map(e=>e.year));if(min===max)max=min+1;
+  // VCS fixed master chronology: 3000 BC through AD 2000.
+  // Keeping one stable world range makes zoom levels and date spacing predictable.
+  const min=-3000,max=2000;
   const x=y=>90+(y-min)/(max-min)*1220;
   const cats=activeTimelineCats();
   const present=new Set(ev.map(e=>e.category));
@@ -141,7 +143,7 @@ function renderTimeline(){
     const rowEnds=[];
     for(const e of laneEvents.get(c)){
       const xx=x(e.year), showLabel=true;
-      const screenW=Math.max(54,Math.min(210,24+(e.title||'').length*6.2));
+      const screenW=Math.max(72,Math.min(300,30+(e.title||'').length*8.6));
       const est=screenW/z, gap=14/z;
       let row=0; while(row<rowEnds.length && xx < rowEnds[row]+gap) row++;
       if(row===rowEnds.length)rowEnds.push(-Infinity);
