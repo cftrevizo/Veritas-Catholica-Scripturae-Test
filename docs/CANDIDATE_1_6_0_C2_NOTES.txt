@@ -1,0 +1,13 @@
+VCS Website Edition 1.6.0 Candidate 2 — Semantic Historical Timeline
+
+Adds Timeline as the fifth Visual Experience mode.
+- Contextual controls: Timeline hides unrelated graph controls; its filters change with scope.
+- Scopes: All History, Old Testament, NT & Apostolic Age, Church History.
+- Five detail levels: Foundational, Major, Significant, Detailed, Source-level.
+- OT categories include biblical events, patriarchs, covenants, kings, prophets, empires/world context, messianic, Scripture/canon.
+- Church categories include Fathers, councils, doctrine, schisms, reforms, persecution/martyrs, Scripture/canon, missions/saints, world context.
+- Schisms and reforms are distinct categories.
+- Dates carry quality labels where chronology is approximate/traditional.
+- Timeline events are a curated initial layer, not an exhaustive chronology.
+
+Candidate 1 Source Library remains included. Production v1.5.0 should remain untouched while testing.
