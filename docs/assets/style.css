@@ -120,3 +120,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 .timeline-axis-label.sticky{font-size:40px;font-weight:800;stroke-width:7px}
 .timeline-lane-label.sticky{font-size:44px;font-weight:800;stroke-width:7px}
 @media(max-width:800px){.timeline-axis-label.sticky{font-size:36px}.timeline-lane-label.sticky{font-size:40px}}
+
+/* 1.6 Timeline collision/axis hotfix: readable 2x sticky axes + stacked events */
+.timeline-axis-label.sticky{font-size:20px;font-weight:800;stroke-width:5px}
+.timeline-lane-label.sticky{font-size:22px;font-weight:800;stroke-width:5px}
+.timeline-event-label.stacked{font-size:10px;font-weight:650;paint-order:stroke;stroke:#101a26;stroke-width:3px;stroke-linejoin:round}
+@media(max-width:800px){.timeline-axis-label.sticky{font-size:18px}.timeline-lane-label.sticky{font-size:20px}}

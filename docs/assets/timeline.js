@@ -43,7 +43,7 @@ function renderTimelineGuides(){
   og.appendChild(S('line',{x1:0,y1:axisY-12,x2:1400,y2:axisY-12,class:'timeline-axis sticky'}));
   for(const [c,y] of TLAYOUT.ymap.entries()){
     const sy=VPANY+VZOOM*y; if(sy<top+10||sy>bottom-10)continue;
-    const lab=S('text',{x:4,y:sy+10,class:'timeline-lane-label sticky'});lab.textContent=TCAT_LABEL[c]||c;og.appendChild(lab);
+    const lab=S('text',{x:10,y:sy+7,class:'timeline-lane-label sticky'});lab.textContent=TCAT_LABEL[c]||c;og.appendChild(lab);
   }
   const badge=S('text',{x:1385,y:top+18,'text-anchor':'end',class:'timeline-resolution-label'});badge.textContent=`Grid: ${step}-year intervals`;og.appendChild(badge);
 }
@@ -52,10 +52,29 @@ function renderTimeline(){
   if(!ev.length){TLAYOUT=null;document.getElementById('visualMeta').innerHTML='<b>Semantic Timeline</b> · No events match the current filters.';return}
   let min=Math.min(...ev.map(e=>e.year)),max=Math.max(...ev.map(e=>e.year));if(min===max)max=min+1;
   const x=y=>90+(y-min)/(max-min)*1220;
-  const lanes=[...new Set(ev.map(e=>e.category))],ymap=new Map(lanes.map((c,i)=>[c,105+i*Math.min(72,500/Math.max(1,lanes.length-1))]));
+  const lanes=[...new Set(ev.map(e=>e.category))];
+  // Collision-aware stacking: labels in a busy lane are assigned to the lowest
+  // available sub-row whose previous label does not overlap horizontally.
+  const laneEvents=new Map(lanes.map(c=>[c,ev.filter(e=>e.category===c).sort((a,b)=>a.year-b.year)]));
+  const laneRows=new Map();
+  for(const c of lanes){
+    const rowEnds=[];
+    for(const e of laneEvents.get(c)){
+      const xx=x(e.year), showLabel=e.importance==='foundational'||e.importance==='major'||(e.importance==='significant'&&ev.length<55);
+      const est=showLabel?Math.max(34,Math.min(150,18+(e.title||'').length*5.7)):18;
+      let row=0; while(row<rowEnds.length && xx-est*.18 < rowEnds[row]+10) row++;
+      if(row===rowEnds.length)rowEnds.push(-Infinity);
+      rowEnds[row]=xx+est;
+      e.__trow=row; e.__tshow=showLabel;
+    }
+    laneRows.set(c,Math.max(1,rowEnds.length));
+  }
+  const topY=88,bottomY=615,totalWeight=lanes.reduce((n,c)=>n+Math.max(1,laneRows.get(c)),0),unit=(bottomY-topY)/Math.max(totalWeight,1);
+  let cursor=topY; const ymap=new Map(),rowStep=new Map();
+  for(const c of lanes){const rows=Math.max(1,laneRows.get(c)),h=unit*rows;ymap.set(c,cursor+h/2);rowStep.set(c,Math.min(24,Math.max(12,h/rows)));cursor+=h}
   TLAYOUT={min,max,ymap};
   lanes.forEach(c=>{let y=ymap.get(c);g.appendChild(S('line',{x1:90,y1:y,x2:1310,y2:y,class:'timeline-lane'}))});
-  ev.sort((a,b)=>a.year-b.year).forEach(e=>{let xx=x(e.year),yy=ymap.get(e.category),r=e.importance==='foundational'?9:e.importance==='major'?7:e.importance==='significant'?5:4,cl=`timeline-event ${e.importance}`;let node=S('circle',{cx:xx,cy:yy,r:r,class:cl});node.tabIndex=0;node.addEventListener('pointermove',z=>tipV(z,`<b>${e.label} · ${e.title}</b><br>${e.summary}${e.source?`<br><span class="tip-note">Source: ${e.source}</span>`:''}${e.date_quality!=='anchored'?`<br><span class="tip-note">Date: ${e.date_quality}</span>`:''}`));node.addEventListener('pointerleave',hideTip);node.addEventListener('click',()=>{TFOCUS=e.id;document.getElementById('timelineDetail').innerHTML=`<b>${e.label} · ${e.title}</b><span>${e.summary}</span>${e.source?`<small>Source / discovery layer: ${e.source}</small>`:''}`});g.appendChild(node);if(e.importance==='foundational'||(e.importance==='major'&&ev.length<70)){let t=S('text',{x:xx+5,y:yy-11,class:'timeline-event-label'});t.textContent=e.title;g.appendChild(t)}});
+  ev.sort((a,b)=>a.year-b.year).forEach(e=>{let xx=x(e.year),base=ymap.get(e.category),rows=Math.max(1,laneRows.get(e.category)),step=rowStep.get(e.category),yy=base+(e.__trow-(rows-1)/2)*step,r=e.importance==='foundational'?9:e.importance==='major'?7:e.importance==='significant'?5:4,cl=`timeline-event ${e.importance}`;let node=S('circle',{cx:xx,cy:yy,r:r,class:cl});node.tabIndex=0;node.addEventListener('pointermove',z=>tipV(z,`<b>${e.label} · ${e.title}</b><br>${e.summary}${e.source?`<br><span class="tip-note">Source: ${e.source}</span>`:''}${e.date_quality!=='anchored'?`<br><span class="tip-note">Date: ${e.date_quality}</span>`:''}`));node.addEventListener('pointerleave',hideTip);node.addEventListener('click',()=>{TFOCUS=e.id;document.getElementById('timelineDetail').innerHTML=`<b>${e.label} · ${e.title}</b><span>${e.summary}</span>${e.source?`<small>Source / discovery layer: ${e.source}</small>`:''}`});g.appendChild(node);if(e.__tshow){let t=S('text',{x:xx+6,y:yy-10,class:'timeline-event-label stacked'});t.textContent=e.title;g.appendChild(t)}});
   let scopeLabel=TSCOPES.size===3?'All History':[...TSCOPES].map(s=>s==='ot'?'OT':s==='apostolic'?'NT & Apostolic':'Church').join(' + ');document.getElementById('visualMeta').innerHTML=`<b>Semantic Timeline · ${scopeLabel}</b> · ${ev.length} visible events · ${[...TIMPORTS].map(x=>x.replace(/^./,c=>c.toUpperCase())).join(' + ')}`;
   requestAnimationFrame(renderTimelineGuides);
 }
