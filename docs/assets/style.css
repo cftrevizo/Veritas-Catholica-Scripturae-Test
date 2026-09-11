@@ -127,3 +127,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 .timeline-event-label.stacked{font-size:10px;font-weight:650;paint-order:stroke;stroke:#101a26;stroke-width:3px;stroke-linejoin:round}
 @media(max-width:800px){.timeline-axis-label.sticky{font-size:18px}.timeline-lane-label.sticky{font-size:20px}}
 \n\n/* VCS 1.6 Timeline concept-alignment hotfix: compact events at every zoom */\n.timeline-event-label.stacked{font-size:10px;font-weight:650;paint-order:stroke;stroke:#101a26;stroke-width:2.4px;stroke-linejoin:round;dominant-baseline:auto}\n.timeline-event{vector-effect:non-scaling-stroke}\n.timeline-axis-label.sticky{font-size:18px;font-weight:800;stroke-width:4px}\n.timeline-lane-label.sticky{font-size:18px;font-weight:800;stroke-width:4px}\n.timeline-fixed-guides .timeline-lane-label.sticky{transform:translateX(-2px)}\n@media(max-width:800px){.timeline-axis-label.sticky{font-size:15px}.timeline-lane-label.sticky{font-size:15px}}\n
+
+/* VCS 1.6 Timeline dynamic-band / scroll-viewport patch */
+.visual-stage.timeline-scroll-mode{max-height:760px;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;scrollbar-gutter:stable;background:linear-gradient(180deg,rgba(7,12,19,.82),rgba(17,24,34,.96))}
+.visual-stage.timeline-scroll-mode svg{width:100%;min-height:0;display:block;cursor:grab;touch-action:pan-y pinch-zoom}
+.timeline-band-boundary{stroke:#d0a854;stroke-opacity:.22;stroke-width:1;vector-effect:non-scaling-stroke}
+.timeline-event-label.stacked{font-size:10px;font-weight:650;paint-order:stroke;stroke:#101a26;stroke-width:2.2px;stroke-linejoin:round}
+.timeline-event{vector-effect:non-scaling-stroke}
+.timeline-fixed-guides .timeline-lane-label.sticky{font-size:18px;font-weight:800;stroke-width:4px}
+.timeline-fixed-guides .timeline-axis-label.sticky{font-size:18px;font-weight:800;stroke-width:4px}
+.visual-stage.timeline-scroll-mode::-webkit-scrollbar{width:12px}.visual-stage.timeline-scroll-mode::-webkit-scrollbar-thumb{background:#7d6a42;border-radius:10px;border:3px solid #111b28}.visual-stage.timeline-scroll-mode::-webkit-scrollbar-track{background:#111b28}
+@media(max-width:800px){.visual-stage.timeline-scroll-mode{max-height:70vh}.timeline-fixed-guides .timeline-lane-label.sticky,.timeline-fixed-guides .timeline-axis-label.sticky{font-size:15px}}
