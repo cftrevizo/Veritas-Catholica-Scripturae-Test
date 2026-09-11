@@ -138,3 +138,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 .timeline-fixed-guides .timeline-axis-label.sticky{font-size:18px;font-weight:800;stroke-width:4px}
 .visual-stage.timeline-scroll-mode::-webkit-scrollbar{width:12px}.visual-stage.timeline-scroll-mode::-webkit-scrollbar-thumb{background:#7d6a42;border-radius:10px;border:3px solid #111b28}.visual-stage.timeline-scroll-mode::-webkit-scrollbar-track{background:#111b28}
 @media(max-width:800px){.visual-stage.timeline-scroll-mode{max-height:70vh}.timeline-fixed-guides .timeline-lane-label.sticky,.timeline-fixed-guides .timeline-axis-label.sticky{font-size:15px}}
+
+
+/* VCS 1.6 Timeline fixed viewport + chronological-only zoom correction */
+.visual-stage.timeline-scroll-mode{
+  height:720px;max-height:720px;overflow-y:auto;overflow-x:hidden;
+  margin-inline:28px;overscroll-behavior-y:auto;scrollbar-gutter:stable;
+}
+.visual-stage.timeline-scroll-mode svg{width:100%;display:block;touch-action:pan-y pinch-zoom}
+.timeline-event{vector-effect:non-scaling-stroke}
+.timeline-event-label.stacked{font-size:10px!important;letter-spacing:0;}
+@media(max-width:800px){
+  .visual-stage.timeline-scroll-mode{height:68vh;max-height:68vh;margin-inline:12px}
+}

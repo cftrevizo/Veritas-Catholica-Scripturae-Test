@@ -49,16 +49,23 @@ function renderTimelineGuides(){
 function updateTimelineEventScale(){
   if(VTYPE!=='timeline')return;
   const z=Math.max(.35,VZOOM||1);
+  // Timeline zoom is chronological only. Counter-scale each marker and label on X
+  // around its own anchor so circles/text never stretch as the year scale expands.
   document.querySelectorAll('#visualViewport .timeline-event').forEach(n=>{
-    const base=Number(n.dataset.baseR||5);n.setAttribute('r',Math.max(3,base));n.setAttribute('stroke-width',1.2/z);
+    const cx=Number(n.dataset.cx),cy=Number(n.dataset.cy);
+    if(Number.isFinite(cx)&&Number.isFinite(cy)) n.setAttribute('transform',`translate(${cx} ${cy}) scale(${1/z} 1) translate(${-cx} ${-cy})`);
+    n.setAttribute('stroke-width','1.35');
   });
   document.querySelectorAll('#visualViewport .timeline-event-label').forEach(t=>{
-    const bx=Number(t.dataset.baseX),by=Number(t.dataset.baseY);
-    if(Number.isFinite(bx))t.setAttribute('x',bx+8/z);
-    if(Number.isFinite(by))t.setAttribute('y',by-8);
-    t.style.fontSize=`${10/z}px`;t.style.strokeWidth=`${2.2/z}px`;
+    const x=Number(t.dataset.baseX),y=Number(t.dataset.baseY);
+    if(Number.isFinite(x)&&Number.isFinite(y)){
+      t.setAttribute('x',x+10/z); t.setAttribute('y',y-8);
+      t.setAttribute('transform',`translate(${x} ${y}) scale(${1/z} 1) translate(${-x} ${-y})`);
+    }
+    t.style.fontSize='10px'; t.style.strokeWidth='2.2px';
   });
 }
+
 function renderTimeline(){
   const {svg,g}=clearV(),ev=timelineFiltered();
   document.querySelector('.visual-stage')?.classList.add('timeline-scroll-mode');
@@ -94,7 +101,7 @@ function renderTimeline(){
   }
   const bottom=cursor+10,axisY=bottom+38,contentH=axisY+30;
   svg.setAttribute('viewBox',`0 0 1400 ${contentH}`);
-  svg.style.height=`${Math.max(700,contentH)}px`;
+  svg.style.height=`${contentH}px`;
   TLAYOUT={min,max,bands,top,bottom,axisY,contentH};
   // Draw lane boundaries so all events are visibly contained between topics.
   for(const [c,b] of bands){
@@ -106,7 +113,7 @@ function renderTimeline(){
     const xx=x(e.year),yy=b.top+lanePadTop+e.__trow*rowH+rowH*.5;
     const r=e.importance==='foundational'?7:e.importance==='major'?6:e.importance==='significant'?5:4;
     const node=S('circle',{cx:xx,cy:yy,r,class:`timeline-event ${e.importance}`});
-    node.dataset.baseR=String(r);node.tabIndex=0;
+    node.dataset.baseR=String(r);node.dataset.cx=String(xx);node.dataset.cy=String(yy);node.tabIndex=0;
     node.addEventListener('pointermove',q=>tipV(q,`<b>${e.label} · ${e.title}</b><br>${e.summary}${e.source?`<br><span class="tip-note">Source: ${e.source}</span>`:''}${e.date_quality!=='anchored'?`<br><span class="tip-note">Date: ${e.date_quality}</span>`:''}`));
     node.addEventListener('pointerleave',hideTip);
     node.addEventListener('click',()=>{TFOCUS=e.id;document.getElementById('timelineDetail').innerHTML=`<b>${e.label} · ${e.title}</b><span>${e.summary}</span>${e.source?`<small>Source / discovery layer: ${e.source}</small>`:''}`});
