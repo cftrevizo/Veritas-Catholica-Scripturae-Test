@@ -49,31 +49,63 @@ const PALETTES={
 function S(tag,attrs={}){const e=document.createElementNS(SVGNS,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);return e}
 function clearV(){const s=document.getElementById('visualSvg');while(s.firstChild)s.removeChild(s.firstChild);const g=S('g',{id:'visualViewport'});s.appendChild(g);applyView(g);return {svg:s,g}}
 function applyView(g=document.getElementById('visualViewport')){if(g)g.setAttribute('transform',VTYPE==='timeline'?`translate(${VPANX} 0) scale(${VZOOM} 1)`:`translate(${VPANX} ${VPANY}) scale(${VZOOM})`);const l=document.getElementById('zoomLabel');if(l)l.textContent=Math.round(VZOOM*100)+'%';if(typeof updateTimelineEventScale==='function')requestAnimationFrame(updateTimelineEventScale);if(typeof renderTimelineGuides==='function')requestAnimationFrame(renderTimelineGuides)}
-function tipV(ev,html){
- const t=document.getElementById('visualTip'); if(!t)return;
- t.innerHTML=html; t.classList.remove('hidden');
- const host=t.parentElement, hr=host.getBoundingClientRect();
- // Timeline event summaries are anchored to the event's current screen position,
- // not to SVG/world coordinates. This keeps them visible after vertical scrolling,
- // horizontal panning, or deep chronological zoom.
- const target=ev.currentTarget||ev.target;
- const isTimeline=VTYPE==='timeline' && target?.classList && (target.classList.contains('timeline-event')||target.classList.contains('timeline-event-hit'));
- const pad=10, gap=12;
- const tr=isTimeline?target.getBoundingClientRect():null;
- const tw=Math.min(360,Math.max(250,t.offsetWidth||300));
- const th=Math.max(80,t.offsetHeight||120);
- let ax=isTimeline?(tr.left+tr.width/2):(ev.clientX||hr.left+hr.width/2);
- let ay=isTimeline?(tr.top+tr.height/2):(ev.clientY||hr.top+hr.height/2);
- let left=ax-hr.left+gap, top=ay-hr.top-th-gap;
- // Prefer above/right; flip below or left when the visible viewport has no room.
- if(top<pad) top=ay-hr.top+gap;
- if(left+tw>hr.width-pad) left=ax-hr.left-tw-gap;
- left=Math.max(pad,Math.min(left,hr.width-tw-pad));
- top=Math.max(pad,Math.min(top,hr.height-th-pad));
- t.style.left=left+'px'; t.style.top=top+'px';
- t.dataset.anchorTimeline=isTimeline?'1':'0';
+let VTIPANCHOR=null,VTIPRAF=0,VTIPHOME=null;
+function ensureTipPortal(){
+ const t=document.getElementById('visualTip'); if(!t)return null;
+ if(!VTIPHOME)VTIPHOME=t.parentElement;
+ if(t.parentElement!==document.body)document.body.appendChild(t);
+ t.classList.add('visual-tip-portal');
+ return t;
 }
-function hideTip(){document.getElementById('visualTip')?.classList.add('hidden')}
+function positionTipToAnchor(){
+ const t=document.getElementById('visualTip');
+ if(!t||t.classList.contains('hidden')||!VTIPANCHOR||!VTIPANCHOR.isConnected)return;
+ const tr=VTIPANCHOR.getBoundingClientRect();
+ const stage=document.querySelector('.visual-stage')?.getBoundingClientRect();
+ const vw=window.innerWidth,vh=window.innerHeight,pad=10,gap=14;
+ // If the event itself is outside the currently visible graph/window, close the summary.
+ const clipL=Math.max(0,stage?.left??0),clipR=Math.min(vw,stage?.right??vw);
+ const clipT=Math.max(0,stage?.top??0),clipB=Math.min(vh,stage?.bottom??vh);
+ const cx=tr.left+tr.width/2,cy=tr.top+tr.height/2;
+ if(cx<clipL||cx>clipR||cy<clipT||cy>clipB){hideTip();return}
+ const tw=Math.min(380,Math.max(260,t.offsetWidth||300));
+ const th=Math.max(72,t.offsetHeight||110);
+ let left=cx+gap,top=cy-th-gap;
+ if(left+tw>vw-pad)left=cx-tw-gap;
+ if(left<pad)left=pad;
+ if(top<pad)top=cy+gap;
+ if(top+th>vh-pad)top=Math.max(pad,cy-th-gap);
+ t.style.left=Math.round(Math.min(left,vw-tw-pad))+'px';
+ t.style.top=Math.round(Math.min(top,vh-th-pad))+'px';
+}
+function tipFollowFrame(){
+ VTIPRAF=0;
+ const t=document.getElementById('visualTip');
+ if(!t||t.classList.contains('hidden')||!VTIPANCHOR)return;
+ positionTipToAnchor();
+ if(!t.classList.contains('hidden'))VTIPRAF=requestAnimationFrame(tipFollowFrame);
+}
+function tipV(ev,html){
+ const target=ev.currentTarget||ev.target;
+ const isTimeline=VTYPE==='timeline'&&target?.classList&&(target.classList.contains('timeline-event')||target.classList.contains('timeline-event-hit'));
+ const t=ensureTipPortal(); if(!t)return;
+ t.innerHTML=html;t.classList.remove('hidden');
+ if(isTimeline){
+   VTIPANCHOR=target;
+   positionTipToAnchor();
+   if(!VTIPRAF)VTIPRAF=requestAnimationFrame(tipFollowFrame);
+ }else{
+   VTIPANCHOR=null;
+   if(VTIPRAF){cancelAnimationFrame(VTIPRAF);VTIPRAF=0}
+   const tw=Math.min(380,Math.max(260,t.offsetWidth||300)),th=Math.max(72,t.offsetHeight||110),pad=10,gap=14;
+   let left=(ev.clientX||window.innerWidth/2)+gap,top=(ev.clientY||window.innerHeight/2)-th-gap;
+   if(left+tw>window.innerWidth-pad)left=(ev.clientX||0)-tw-gap;
+   if(top<pad)top=(ev.clientY||0)+gap;
+   t.style.left=Math.max(pad,Math.min(left,window.innerWidth-tw-pad))+'px';
+   t.style.top=Math.max(pad,Math.min(top,window.innerHeight-th-pad))+'px';
+ }
+}
+function hideTip(){const t=document.getElementById('visualTip');if(t)t.classList.add('hidden');VTIPANCHOR=null;if(VTIPRAF){cancelAnimationFrame(VTIPRAF);VTIPRAF=0}}
 function bookX(i,n){return 45+i*(1310/Math.max(1,n-1))}
 function palette(){return PALETTES[document.getElementById('paletteSelect')?.value||'illuminated']}
 function archFactor(){return +(document.getElementById('archHeightRange')?.value||150)/100}
