@@ -200,3 +200,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 .timeline-event-label.stacked{font-size:18px!important;font-weight:680;stroke-width:2.8px}
 .timeline-fixed-guides .timeline-lane-label.sticky{font-size:24px!important;font-weight:800;stroke-width:4.5px}
 @media(max-width:800px){.timeline-event-label.stacked{font-size:15px!important}.timeline-fixed-guides .timeline-lane-label.sticky{font-size:20px!important}}
+
+
+/* VCS 1.6 Timeline guaranteed event hover targets */
+.timeline-event-hit{fill:transparent;stroke:none;pointer-events:all;cursor:pointer}
+.timeline-event-label,.timeline-event-label.stacked{pointer-events:none}
+.timeline-event-hit:hover + .timeline-event{stroke:#fff;stroke-width:2.5}

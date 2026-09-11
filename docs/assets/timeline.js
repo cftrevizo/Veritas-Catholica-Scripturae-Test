@@ -171,14 +171,23 @@ function renderTimeline(){
     const r=e.importance==='foundational'?7:e.importance==='major'?6:e.importance==='significant'?5:4;
     const node=S('circle',{cx:xx,cy:yy,r,class:`timeline-event ${e.importance}`});
     node.dataset.baseR=String(r);node.dataset.cx=String(xx);node.dataset.cy=String(yy);node.tabIndex=0;
-    const eventSummary=q=>tipV(q,`<b>${e.label} · ${e.title}</b><br>${e.summary}${e.source?`<br><span class="tip-note">Source: ${e.source}</span>`:''}${e.date_quality!=='anchored'?`<br><span class="tip-note">Date: ${e.date_quality}</span>`:''}`);
-    node.addEventListener('pointerenter',eventSummary);
-    node.addEventListener('pointermove',eventSummary);
+    const summary=(e.summary||e.description||'').trim();
+    const summaryHtml=summary?`<br>${summary}`:'';
+    const eventSummary=q=>tipV(q,`<b>${e.label} · ${e.title}</b>${summaryHtml}<br><span class="tip-note">Category: ${e.category} · Importance: ${e.importance}</span>${e.source?`<br><span class="tip-note">Source: ${e.source}</span>`:''}${e.date_quality!=='anchored'?`<br><span class="tip-note">Date quality: ${e.date_quality}</span>`:''}`);
+    const openDetail=q=>{TFOCUS=e.id;document.getElementById('timelineDetail').innerHTML=`<b>${e.label} · ${e.title}</b><span>${summary||'No extended summary is currently available for this event.'}</span>${e.source?`<small>Source / discovery layer: ${e.source}</small>`:''}`; if(q.pointerType==='touch')eventSummary(q)};
+    // A transparent hit target makes every event easy to hover even when stacked labels
+    // visually cross the dot. The visible marker remains compact.
+    const hit=S('circle',{cx:xx,cy:yy,r:Math.max(13,r+7),class:'timeline-event-hit'});
+    hit.dataset.cx=String(xx);hit.dataset.cy=String(yy);
+    for(const target of [hit,node]){
+      target.addEventListener('pointerenter',eventSummary);
+      target.addEventListener('pointermove',eventSummary);
+      target.addEventListener('pointerleave',hideTip);
+      target.addEventListener('click',openDetail);
+    }
     node.addEventListener('focus',eventSummary);
-    node.addEventListener('pointerleave',hideTip);
     node.addEventListener('blur',hideTip);
-    node.addEventListener('click',q=>{TFOCUS=e.id;document.getElementById('timelineDetail').innerHTML=`<b>${e.label} · ${e.title}</b><span>${e.summary}</span>${e.source?`<small>Source / discovery layer: ${e.source}</small>`:''}`; if(q.pointerType==='touch')eventSummary(q)});
-    g.appendChild(node);
+    g.appendChild(hit);g.appendChild(node);
     const t=S('text',{x:xx+8,y:yy-8,class:'timeline-event-label stacked'});t.dataset.baseX=String(xx);t.dataset.baseY=String(yy);t.dataset.side='right';t.textContent=e.title;g.appendChild(t);
   });
   updateTimelineEventScale();
