@@ -1,8 +1,0 @@
-VCS Website Edition 1.6.0 Candidate 4 - Review 3
-
-Focused corrections:
-- Passage-range state is now explicit in Study Topic deep links (chapter/start/end), rather than relying only on display-label parsing.
-- 73-Book Explorer uses that explicit state for Study Topic range navigation and Return-to-Topic behavior.
-- Source Library related-topic ranking now requires explicit metadata overlap and drops weak fallback matches.
-- Study Topic historical-witness matching now requires a direct/strong topic match rather than broad incidental word overlap.
-- Previously approved Timeline behavior is unchanged.
