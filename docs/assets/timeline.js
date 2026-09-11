@@ -9,58 +9,95 @@ function syncScopeButtons(){const all=TSCOPES.size===3;document.querySelectorAll
 function syncImportanceButtons(){document.querySelectorAll('[data-timeline-importance]').forEach(b=>{let on=TIMPORTS.has(b.dataset.timelineImportance);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))})}
 function timelineControls(){let cats=activeTimelineCats();TCATS=new Set([...TCATS].filter(c=>cats.includes(c)));document.getElementById('timelineCategories').innerHTML=cats.map(c=>`<button class="timeline-chip ${TCATS.size===0||TCATS.has(c)?'active':''}" data-timeline-category="${c}" aria-pressed="${TCATS.size===0||TCATS.has(c)}">${TCAT_LABEL[c]||c}</button>`).join('');document.querySelectorAll('[data-timeline-category]').forEach(b=>b.onclick=()=>{let allMode=TCATS.size===0;if(allMode)TCATS=new Set(cats);let c=b.dataset.timelineCategory;TCATS.has(c)?TCATS.delete(c):TCATS.add(c);if(TCATS.size===cats.length)TCATS.clear();timelineControls();renderVisual();scheduleFitVisual()});syncScopeButtons();syncImportanceButtons()}
 function timelineFiltered(){if(!TDATA)return[];return TDATA.events.filter(e=>TSCOPES.has(e.scope)&&TIMPORTS.has(e.importance)&&(!TCATS.size||TCATS.has(e.category)||e.tags?.some(t=>TCATS.has(t))))}
+function timelineVisibleRange(){
+  if(!TLAYOUT)return {min:0,max:1};
+  const z=Math.max(.35,VZOOM||1);
+  const worldPerYear=1220/Math.max(1,TLAYOUT.max-TLAYOUT.min);
+  const leftWorld=(0-VPANX)/z;
+  const rightWorld=(1400-VPANX)/z;
+  let min=TLAYOUT.min+((leftWorld-90)/1220)*(TLAYOUT.max-TLAYOUT.min);
+  let max=TLAYOUT.min+((rightWorld-90)/1220)*(TLAYOUT.max-TLAYOUT.min);
+  if(min>max)[min,max]=[max,min];
+  return {min,max,years:Math.max(1,Math.abs(rightWorld-leftWorld)/worldPerYear)};
+}
+function timelineMeasureYearLabel(text){
+  try{
+    const c=timelineMeasureYearLabel.canvas||(timelineMeasureYearLabel.canvas=document.createElement('canvas'));
+    const ctx=c.getContext('2d');ctx.font='800 18px system-ui, sans-serif';
+    return ctx.measureText(text).width;
+  }catch(_){return Math.max(58,String(text).length*10)}
+}
 function timelineGridInterval(){
-  // Pick from the approved chronological resolutions while keeping the grid
-  // readable across the viewport. Aim for about 24 lines, tolerate roughly
-  // 10-40, and never use a subdivision smaller than one year.
+  // Choose only from the approved resolutions. The deciding constraint is
+  // rendered pixel spacing: date labels must not overlap at the current zoom.
   if(!TLAYOUT)return 100;
   const candidates=[500,250,100,75,50,25,10,1];
-  const years=Math.max(1,TLAYOUT.max-TLAYOUT.min);
-  const worldPerYear=1220/years;
-  const leftWorld=(0-VPANX)/Math.max(.35,VZOOM);
-  const rightWorld=(1400-VPANX)/Math.max(.35,VZOOM);
-  const visibleYears=Math.max(1,Math.abs(rightWorld-leftWorld)/worldPerYear);
-  const target=24, minLines=10, maxLines=40;
-  let best=candidates[0], bestScore=Infinity;
+  const vr=timelineVisibleRange();
+  const stage=document.querySelector('.visual-stage.timeline-scroll-mode');
+  const width=Math.max(420,stage?.clientWidth||1000);
+  const target=24,minLines=10,maxLines=40;
+  let best=candidates[0],bestScore=Infinity;
   for(const step of candidates){
-    const lines=visibleYears/step;
-    const outside=lines<minLines ? (minLines-lines)*4 : lines>maxLines ? (lines-maxLines)*4 : 0;
-    const score=outside+Math.abs(lines-target);
+    const lines=Math.max(1,vr.years/step);
+    const sample=[Math.floor(vr.min/step)*step,Math.round((vr.min+vr.max)/2/step)*step,Math.ceil(vr.max/step)*step]
+      .filter(y=>y!==0).map(tYear);
+    const labelW=Math.max(54,...sample.map(timelineMeasureYearLabel));
+    const px=width/lines;
+    const overlapPenalty=px<labelW+18 ? (labelW+18-px)*8 : 0;
+    const countPenalty=lines<minLines ? (minLines-lines)*7 : lines>maxLines ? (lines-maxLines)*7 : 0;
+    const score=overlapPenalty+countPenalty+Math.abs(lines-target);
     if(score<bestScore){bestScore=score;best=step;}
   }
   return best;
 }
+function ensureTimelineStickyAxis(){
+  const stage=document.querySelector('.visual-stage');if(!stage)return null;
+  let axis=stage.querySelector('#timelineStickyDateAxis');
+  if(!axis){axis=document.createElement('div');axis.id='timelineStickyDateAxis';axis.className='timeline-sticky-date-axis';stage.prepend(axis)}
+  return axis;
+}
+function renderTimelineStickyAxis(step,visibleMin,visibleMax,xScreen){
+  const axis=ensureTimelineStickyAxis();if(!axis)return;
+  axis.innerHTML='';
+  const stage=document.querySelector('.visual-stage.timeline-scroll-mode');
+  const width=Math.max(1,stage?.clientWidth||1);
+  let first=Math.floor(visibleMin/step)*step;
+  for(let yr=first;yr<=visibleMax+step;yr+=step){
+    if(yr===0)continue;
+    const xx=xScreen(yr);if(xx<0||xx>1400)continue;
+    const label=document.createElement('span');label.className='timeline-sticky-date-label';
+    label.style.left=`${(xx/1400)*100}%`;label.textContent=tYear(yr);axis.appendChild(label);
+  }
+  if(TLAYOUT.min<0&&TLAYOUT.max>0){
+    const zx=xScreen(0);if(zx>=0&&zx<=1400){
+      const era=document.createElement('span');era.className='timeline-sticky-era-label';era.style.left=`${(zx/1400)*100}%`;era.textContent='BC | AD';axis.appendChild(era);
+    }
+  }
+  const badge=document.createElement('span');badge.className='timeline-sticky-resolution';badge.textContent=`${step}-year grid`;axis.appendChild(badge);
+}
 function renderTimelineGuides(){
   const svg=document.getElementById('visualSvg'); if(!svg)return;
   svg.querySelector('#timelineFixedGuides')?.remove();
-  if(VTYPE!=='timeline'||!TLAYOUT)return;
+  if(VTYPE!=='timeline'||!TLAYOUT){document.getElementById('timelineStickyDateAxis')?.remove();return;}
   const og=S('g',{id:'timelineFixedGuides',class:'timeline-fixed-guides'}); svg.appendChild(og);
   const top=TLAYOUT.top,bottom=TLAYOUT.bottom,step=timelineGridInterval();
-  const dateY=Math.max(24,top-30), axisY=Math.max(38,top-18);
   const xWorld=yr=>90+(yr-TLAYOUT.min)/(TLAYOUT.max-TLAYOUT.min)*1220;
   const xScreen=yr=>VPANX+VZOOM*xWorld(yr);
-  let visibleMin=TLAYOUT.min+(((0-VPANX)/VZOOM)-90)/1220*(TLAYOUT.max-TLAYOUT.min);
-  let visibleMax=TLAYOUT.min+(((1400-VPANX)/VZOOM)-90)/1220*(TLAYOUT.max-TLAYOUT.min);
-  if(visibleMin>visibleMax)[visibleMin,visibleMax]=[visibleMax,visibleMin];
+  const vr=timelineVisibleRange(),visibleMin=vr.min,visibleMax=vr.max;
   let first=Math.floor(visibleMin/step)*step;
   for(let yr=first;yr<=visibleMax+step;yr+=step){
     if(yr===0)continue;
     const xx=xScreen(yr); if(xx<-20||xx>1420)continue;
     const major=(Math.abs(yr)%100===0);
     og.appendChild(S('line',{x1:xx,y1:top,x2:xx,y2:bottom,class:major?'timeline-grid major':'timeline-grid'}));
-    const t=S('text',{x:xx,y:dateY,'text-anchor':'middle',class:'timeline-axis-label sticky top'}); t.textContent=tYear(yr); og.appendChild(t);
   }
   if(TLAYOUT.min<0&&TLAYOUT.max>0){
-    const zx=xScreen(0); if(zx>=0&&zx<=1400){
-      og.appendChild(S('line',{x1:zx,y1:top,x2:zx,y2:bottom,class:'timeline-era-divider'}));
-      const e=S('text',{x:zx+6,y:dateY+22,class:'timeline-era-label'});e.textContent='BC  |  AD';og.appendChild(e);
-    }
+    const zx=xScreen(0); if(zx>=0&&zx<=1400) og.appendChild(S('line',{x1:zx,y1:top,x2:zx,y2:bottom,class:'timeline-era-divider'}));
   }
-  og.appendChild(S('line',{x1:0,y1:axisY,x2:1400,y2:axisY,class:'timeline-axis sticky top'}));
   for(const [c,b] of TLAYOUT.bands.entries()){
     const lab=S('text',{x:6,y:b.top+24,class:'timeline-lane-label sticky'});lab.textContent=TCAT_LABEL[c]||c;og.appendChild(lab);
   }
-  const badge=S('text',{x:1385,y:dateY+22,'text-anchor':'end',class:'timeline-resolution-label'});badge.textContent=`Grid: ${step}-year intervals`;og.appendChild(badge);
+  renderTimelineStickyAxis(step,visibleMin,visibleMax,xScreen);
 }
 function updateTimelineEventScale(){
   if(VTYPE!=='timeline')return;

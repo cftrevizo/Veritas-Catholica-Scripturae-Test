@@ -156,3 +156,33 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 .timeline-axis-label.sticky.top{font-size:18px;font-weight:800;stroke-width:4px}
 .timeline-axis.sticky.top{stroke:#d0a854;stroke-opacity:.82;stroke-width:1.35}
 .timeline-resolution-label{font-size:11px}
+
+/* VCS 1.6 Timeline sticky top date-axis + non-overlap adaptive grid hotfix */
+.visual-stage.timeline-scroll-mode{position:relative;padding-top:48px}
+.timeline-sticky-date-axis{
+  position:sticky;top:0;z-index:24;height:46px;margin-top:-48px;
+  background:linear-gradient(180deg,rgba(11,19,29,.98),rgba(11,19,29,.92));
+  border-bottom:1px solid rgba(208,168,84,.5);box-shadow:0 4px 10px rgba(0,0,0,.18);
+  pointer-events:none;overflow:hidden;
+}
+.timeline-sticky-date-label{
+  position:absolute;top:8px;transform:translateX(-50%);white-space:nowrap;
+  color:#d9e1e8;font:800 18px/1 system-ui,sans-serif;
+  text-shadow:0 1px 2px #07101a,0 0 4px #07101a;
+}
+.timeline-sticky-era-label{
+  position:absolute;top:28px;transform:translateX(-50%);white-space:nowrap;
+  color:#d6c89f;font:800 11px/1 system-ui,sans-serif;
+}
+.timeline-sticky-resolution{
+  position:absolute;right:10px;bottom:4px;color:#d6c89f;
+  font:700 10px/1 system-ui,sans-serif;background:rgba(11,19,29,.82);padding:2px 5px;border-radius:4px;
+}
+/* SVG date text is replaced by the sticky HTML axis; keep only lane labels/grid in SVG. */
+.timeline-fixed-guides .timeline-axis-label,.timeline-fixed-guides .timeline-era-label,.timeline-fixed-guides .timeline-resolution-label{display:none!important}
+@media(max-width:800px){
+  .visual-stage.timeline-scroll-mode{padding-top:42px}
+  .timeline-sticky-date-axis{height:40px;margin-top:-42px}
+  .timeline-sticky-date-label{font-size:15px;top:7px}
+  .timeline-sticky-era-label{top:25px;font-size:9px}
+}
