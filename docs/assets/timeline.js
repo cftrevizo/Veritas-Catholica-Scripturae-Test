@@ -10,17 +10,33 @@ function syncImportanceButtons(){document.querySelectorAll('[data-timeline-impor
 function timelineControls(){let cats=activeTimelineCats();TCATS=new Set([...TCATS].filter(c=>cats.includes(c)));document.getElementById('timelineCategories').innerHTML=cats.map(c=>`<button class="timeline-chip ${TCATS.size===0||TCATS.has(c)?'active':''}" data-timeline-category="${c}" aria-pressed="${TCATS.size===0||TCATS.has(c)}">${TCAT_LABEL[c]||c}</button>`).join('');document.querySelectorAll('[data-timeline-category]').forEach(b=>b.onclick=()=>{let allMode=TCATS.size===0;if(allMode)TCATS=new Set(cats);let c=b.dataset.timelineCategory;TCATS.has(c)?TCATS.delete(c):TCATS.add(c);if(TCATS.size===cats.length)TCATS.clear();timelineControls();renderVisual();scheduleFitVisual()});syncScopeButtons();syncImportanceButtons()}
 function timelineFiltered(){if(!TDATA)return[];return TDATA.events.filter(e=>TSCOPES.has(e.scope)&&TIMPORTS.has(e.importance)&&(!TCATS.size||TCATS.has(e.category)||e.tags?.some(t=>TCATS.has(t))))}
 function timelineGridInterval(){
+  // Pick from the approved chronological resolutions while keeping the grid
+  // readable across the viewport. Aim for about 24 lines, tolerate roughly
+  // 10-40, and never use a subdivision smaller than one year.
   if(!TLAYOUT)return 100;
-  const years=Math.max(1,TLAYOUT.max-TLAYOUT.min), unitsPerYear=1220/years;
-  for(const step of [1,5,25,50,100]) if(step*unitsPerYear*VZOOM>=58)return step;
-  return 100;
+  const candidates=[500,250,100,75,50,25,10,1];
+  const years=Math.max(1,TLAYOUT.max-TLAYOUT.min);
+  const worldPerYear=1220/years;
+  const leftWorld=(0-VPANX)/Math.max(.35,VZOOM);
+  const rightWorld=(1400-VPANX)/Math.max(.35,VZOOM);
+  const visibleYears=Math.max(1,Math.abs(rightWorld-leftWorld)/worldPerYear);
+  const target=24, minLines=10, maxLines=40;
+  let best=candidates[0], bestScore=Infinity;
+  for(const step of candidates){
+    const lines=visibleYears/step;
+    const outside=lines<minLines ? (minLines-lines)*4 : lines>maxLines ? (lines-maxLines)*4 : 0;
+    const score=outside+Math.abs(lines-target);
+    if(score<bestScore){bestScore=score;best=step;}
+  }
+  return best;
 }
 function renderTimelineGuides(){
   const svg=document.getElementById('visualSvg'); if(!svg)return;
   svg.querySelector('#timelineFixedGuides')?.remove();
   if(VTYPE!=='timeline'||!TLAYOUT)return;
   const og=S('g',{id:'timelineFixedGuides',class:'timeline-fixed-guides'}); svg.appendChild(og);
-  const top=TLAYOUT.top,bottom=TLAYOUT.bottom,axisY=TLAYOUT.axisY,step=timelineGridInterval();
+  const top=TLAYOUT.top,bottom=TLAYOUT.bottom,step=timelineGridInterval();
+  const dateY=Math.max(24,top-30), axisY=Math.max(38,top-18);
   const xWorld=yr=>90+(yr-TLAYOUT.min)/(TLAYOUT.max-TLAYOUT.min)*1220;
   const xScreen=yr=>VPANX+VZOOM*xWorld(yr);
   let visibleMin=TLAYOUT.min+(((0-VPANX)/VZOOM)-90)/1220*(TLAYOUT.max-TLAYOUT.min);
@@ -32,19 +48,19 @@ function renderTimelineGuides(){
     const xx=xScreen(yr); if(xx<-20||xx>1420)continue;
     const major=(Math.abs(yr)%100===0);
     og.appendChild(S('line',{x1:xx,y1:top,x2:xx,y2:bottom,class:major?'timeline-grid major':'timeline-grid'}));
-    const t=S('text',{x:xx,y:axisY,'text-anchor':'middle',class:'timeline-axis-label sticky'}); t.textContent=tYear(yr); og.appendChild(t);
+    const t=S('text',{x:xx,y:dateY,'text-anchor':'middle',class:'timeline-axis-label sticky top'}); t.textContent=tYear(yr); og.appendChild(t);
   }
   if(TLAYOUT.min<0&&TLAYOUT.max>0){
     const zx=xScreen(0); if(zx>=0&&zx<=1400){
       og.appendChild(S('line',{x1:zx,y1:top,x2:zx,y2:bottom,class:'timeline-era-divider'}));
-      const e=S('text',{x:zx+6,y:top+18,class:'timeline-era-label'});e.textContent='BC  |  AD';og.appendChild(e);
+      const e=S('text',{x:zx+6,y:dateY+22,class:'timeline-era-label'});e.textContent='BC  |  AD';og.appendChild(e);
     }
   }
-  og.appendChild(S('line',{x1:0,y1:axisY-12,x2:1400,y2:axisY-12,class:'timeline-axis sticky'}));
+  og.appendChild(S('line',{x1:0,y1:axisY,x2:1400,y2:axisY,class:'timeline-axis sticky top'}));
   for(const [c,b] of TLAYOUT.bands.entries()){
     const lab=S('text',{x:6,y:b.top+24,class:'timeline-lane-label sticky'});lab.textContent=TCAT_LABEL[c]||c;og.appendChild(lab);
   }
-  const badge=S('text',{x:1385,y:top+18,'text-anchor':'end',class:'timeline-resolution-label'});badge.textContent=`Grid: ${step}-year intervals`;og.appendChild(badge);
+  const badge=S('text',{x:1385,y:dateY+22,'text-anchor':'end',class:'timeline-resolution-label'});badge.textContent=`Grid: ${step}-year intervals`;og.appendChild(badge);
 }
 function updateTimelineEventScale(){
   if(VTYPE!=='timeline')return;

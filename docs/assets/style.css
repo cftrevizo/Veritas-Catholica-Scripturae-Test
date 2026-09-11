@@ -151,3 +151,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 @media(max-width:800px){
   .visual-stage.timeline-scroll-mode{height:68vh;max-height:68vh;margin-inline:12px}
 }
+
+/* VCS 1.6 Timeline top-date adaptive grid hotfix */
+.timeline-axis-label.sticky.top{font-size:18px;font-weight:800;stroke-width:4px}
+.timeline-axis.sticky.top{stroke:#d0a854;stroke-opacity:.82;stroke-width:1.35}
+.timeline-resolution-label{font-size:11px}
