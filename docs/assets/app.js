@@ -48,7 +48,7 @@ const PALETTES={
 };
 function S(tag,attrs={}){const e=document.createElementNS(SVGNS,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);return e}
 function clearV(){const s=document.getElementById('visualSvg');while(s.firstChild)s.removeChild(s.firstChild);const g=S('g',{id:'visualViewport'});s.appendChild(g);applyView(g);return {svg:s,g}}
-function applyView(g=document.getElementById('visualViewport')){if(g)g.setAttribute('transform',`translate(${VPANX} ${VPANY}) scale(${VZOOM})`);const l=document.getElementById('zoomLabel');if(l)l.textContent=Math.round(VZOOM*100)+'%'}
+function applyView(g=document.getElementById('visualViewport')){if(g)g.setAttribute('transform',`translate(${VPANX} ${VPANY}) scale(${VZOOM})`);const l=document.getElementById('zoomLabel');if(l)l.textContent=Math.round(VZOOM*100)+'%';if(typeof renderTimelineGuides==='function')requestAnimationFrame(renderTimelineGuides)}
 function tipV(ev,html){const t=document.getElementById('visualTip');t.innerHTML=html;t.classList.remove('hidden');const r=t.parentElement.getBoundingClientRect();t.style.left=Math.min(ev.clientX-r.left+14,r.width-290)+'px';t.style.top=Math.max(8,ev.clientY-r.top-18)+'px'}
 function hideTip(){document.getElementById('visualTip')?.classList.add('hidden')}
 function bookX(i,n){return 45+i*(1310/Math.max(1,n-1))}
