@@ -1,0 +1,19 @@
+VCS Website Edition 1.6.0 - Release Candidate 1
+
+Production-candidate cleanup of the approved Candidate 4 baseline.
+
+Included:
+- Source Library and provenance workflow
+- Catholic historical Timeline and approved zoom/stacking/tooltip behavior
+- Study Topics <-> Source Library navigation
+- Source Library -> Timeline contextual navigation and auto-scroll
+- Evidence relevance/ranking cleanup
+- Exact Scripture deep links
+- Multi-verse Study Topic range navigation with return-to-topic behavior
+
+Release-candidate cleanup:
+- Candidate/test-facing labels normalized to Release Candidate 1
+- Old candidate note files removed from deployable /docs
+- Asset cache keys bumped to 1.6.0rc1
+
+No approved core Timeline behavior was redesigned in this pass.
