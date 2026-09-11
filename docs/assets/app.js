@@ -49,7 +49,30 @@ const PALETTES={
 function S(tag,attrs={}){const e=document.createElementNS(SVGNS,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);return e}
 function clearV(){const s=document.getElementById('visualSvg');while(s.firstChild)s.removeChild(s.firstChild);const g=S('g',{id:'visualViewport'});s.appendChild(g);applyView(g);return {svg:s,g}}
 function applyView(g=document.getElementById('visualViewport')){if(g)g.setAttribute('transform',VTYPE==='timeline'?`translate(${VPANX} 0) scale(${VZOOM} 1)`:`translate(${VPANX} ${VPANY}) scale(${VZOOM})`);const l=document.getElementById('zoomLabel');if(l)l.textContent=Math.round(VZOOM*100)+'%';if(typeof updateTimelineEventScale==='function')requestAnimationFrame(updateTimelineEventScale);if(typeof renderTimelineGuides==='function')requestAnimationFrame(renderTimelineGuides)}
-function tipV(ev,html){const t=document.getElementById('visualTip');t.innerHTML=html;t.classList.remove('hidden');const r=t.parentElement.getBoundingClientRect();t.style.left=Math.min(ev.clientX-r.left+14,r.width-290)+'px';t.style.top=Math.max(8,ev.clientY-r.top-18)+'px'}
+function tipV(ev,html){
+ const t=document.getElementById('visualTip'); if(!t)return;
+ t.innerHTML=html; t.classList.remove('hidden');
+ const host=t.parentElement, hr=host.getBoundingClientRect();
+ // Timeline event summaries are anchored to the event's current screen position,
+ // not to SVG/world coordinates. This keeps them visible after vertical scrolling,
+ // horizontal panning, or deep chronological zoom.
+ const target=ev.currentTarget||ev.target;
+ const isTimeline=VTYPE==='timeline' && target?.classList && (target.classList.contains('timeline-event')||target.classList.contains('timeline-event-hit'));
+ const pad=10, gap=12;
+ const tr=isTimeline?target.getBoundingClientRect():null;
+ const tw=Math.min(360,Math.max(250,t.offsetWidth||300));
+ const th=Math.max(80,t.offsetHeight||120);
+ let ax=isTimeline?(tr.left+tr.width/2):(ev.clientX||hr.left+hr.width/2);
+ let ay=isTimeline?(tr.top+tr.height/2):(ev.clientY||hr.top+hr.height/2);
+ let left=ax-hr.left+gap, top=ay-hr.top-th-gap;
+ // Prefer above/right; flip below or left when the visible viewport has no room.
+ if(top<pad) top=ay-hr.top+gap;
+ if(left+tw>hr.width-pad) left=ax-hr.left-tw-gap;
+ left=Math.max(pad,Math.min(left,hr.width-tw-pad));
+ top=Math.max(pad,Math.min(top,hr.height-th-pad));
+ t.style.left=left+'px'; t.style.top=top+'px';
+ t.dataset.anchorTimeline=isTimeline?'1':'0';
+}
 function hideTip(){document.getElementById('visualTip')?.classList.add('hidden')}
 function bookX(i,n){return 45+i*(1310/Math.max(1,n-1))}
 function palette(){return PALETTES[document.getElementById('paletteSelect')?.value||'illuminated']}
