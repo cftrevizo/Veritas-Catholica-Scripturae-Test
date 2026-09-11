@@ -1,0 +1,10 @@
+VCS Website Edition 1.6.0 Candidate 1 — Source Library Infrastructure
+
+Adds:
+- source-library.html searchable interface
+- data/source_library.json and .csv
+- 33 normalized source records spanning Apostolic Fathers, major patristic witnesses, CCC, CCEL and Fordham discovery layers
+- provenance/licensing notes and topic tags
+- navigation links from core VCS pages
+
+Methodological rule: this index is a discovery/provenance layer. Topic tags do not by themselves prove doctrinal continuity. Historical translations are not silently treated as modern critical editions.

@@ -1,0 +1,15 @@
+VCS Website Edition 1.6.0 Candidate 4 - Review 2 Consolidated Corrections
+
+Review 2 fixes:
+- Study Topic passage ranges preserve the complete originating citation.
+- Range navigator provides Previous / Next, exact current reference, and x-of-y position.
+- Added Return to [originating Study Topic] round-trip navigation.
+- Source Library View on Timeline now scrolls the page to Visual Experience automatically.
+- Preserves approved C4 Review 1 historical witness, provenance, source-library, and Timeline behavior.
+- Related Source Library topics remain compact at three initially with Show more.
+
+Testing focus:
+1. Study Topics > Eucharist / Holy Communion > Jn 6:35-71.
+2. Verify Study Topic range bar and Previous/Next through verses 35-71.
+3. Verify Return to Eucharist / Holy Communion.
+4. Source Library > Ignatius > Smyrnaeans > View on Timeline; verify automatic page scroll to Visual Experience.
