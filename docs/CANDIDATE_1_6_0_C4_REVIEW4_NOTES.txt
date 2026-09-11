@@ -1,0 +1,10 @@
+VCS Website Edition 1.6.0 Candidate 4 - Review 4
+
+Focused correction:
+- Traced Study Topics -> 73-Book passage-range handoff end-to-end.
+- Preserves verse, passage, originating topic, range chapter/start/end.
+- Adds explicit from=study-topic navigation marker.
+- Bumps browser asset cache keys to 1.6.0c4r4 so GitHub Pages browsers cannot reuse older app.js/topics.js from prior C4 reviews.
+- Keeps approved Timeline and Source Library relevance behavior unchanged.
+
+Expected test: Eucharist / Holy Communion -> Jn 6:35-71 displays range context, Previous/Next, position, and Return to topic.

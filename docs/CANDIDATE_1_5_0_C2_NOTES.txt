@@ -1,0 +1,13 @@
+VCS Website Edition 1.5.0 — Candidate 2: Formation Expansion
+
+Baseline: Candidate 1.
+Added 68 new unique Study Topics after title-level reconciliation.
+Total topics: 194.
+Total Scripture citation entries: 1208.
+
+Scope:
+- Broadens the ten-part Catholic formation curriculum.
+- Adds Scripture + CCC mappings for readily verifiable Tier 2–7 subjects.
+- Expands Christology, sacramental typology, moral/spiritual life, Marian/saint questions, Church/liturgy, textual/canon history, eschatology, early Church/history, and Defending the Faith.
+- Does not replace Candidate 3's planned deep-source review. Some historical/textual topics are explicitly labeled as study topics where the Catechism does not provide a dedicated treatment.
+- Existing source boundaries remain in force.

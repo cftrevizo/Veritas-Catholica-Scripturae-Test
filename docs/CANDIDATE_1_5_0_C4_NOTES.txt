@@ -1,0 +1,14 @@
+VCS Website Edition 1.5.0 Candidate 4 — Messianic Evidence + Release Hardening
+
+Baseline: Candidate 3.
+
+Changes:
+- Adds a curated Messianic OT→NT evidence map while preserving the sourced traditional 351-item list.
+- Distinguishes direct NT quotation, explicit fulfillment, explicit NT application, typology, strong textual relationship, and traditional messianic reading.
+- Adds source/methodology disclosure for the Messianic evidence layer.
+- Adds topic deep-link support via ?topic=... and keeps existing verse links.
+- Adds reduced-motion and focus-visible accessibility hardening.
+- Updates cache identifiers to 1.5.0c4.
+- Preserves Candidate 3 Visual Experience fit-to-view, pointer/pinch zoom, 73-book hierarchical relationships, Study Topics, and defense scenarios.
+
+Important: The evidence classifications are a curated study layer and remain open to Catholic scholarly review; the 351-item source list itself mixes prediction, typology, illustration, and broader correspondence.
