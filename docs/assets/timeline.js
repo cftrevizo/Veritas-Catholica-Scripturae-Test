@@ -94,7 +94,11 @@ function renderTimelineGuides(){
   if(TLAYOUT.min<0&&TLAYOUT.max>0){
     const zx=xScreen(0); if(zx>=0&&zx<=1400) og.appendChild(S('line',{x1:zx,y1:top,x2:zx,y2:bottom,class:'timeline-era-divider'}));
   }
+  // Full-width horizontal lane boundaries are rendered in the fixed guide layer,
+  // so they always span the visible plotting area regardless of horizontal zoom/pan.
   for(const [c,b] of TLAYOUT.bands.entries()){
+    og.appendChild(S('line',{x1:0,y1:b.top,x2:1400,y2:b.top,class:'timeline-lane-full'}));
+    og.appendChild(S('line',{x1:0,y1:b.bottom,x2:1400,y2:b.bottom,class:'timeline-lane-full'}));
     const lab=S('text',{x:6,y:b.top+24,class:'timeline-lane-label sticky'});lab.textContent=TCAT_LABEL[c]||c;og.appendChild(lab);
   }
   renderTimelineStickyAxis(step,visibleMin,visibleMax,xScreen);
@@ -115,7 +119,7 @@ function updateTimelineEventScale(){
       t.setAttribute('x',x+10/z); t.setAttribute('y',y-8);
       t.setAttribute('transform',`translate(${x} ${y}) scale(${1/z} 1) translate(${-x} ${-y})`);
     }
-    t.style.fontSize='10px'; t.style.strokeWidth='2.2px';
+    t.style.fontSize='12px'; t.style.strokeWidth='2.4px';
   });
 }
 
@@ -167,9 +171,13 @@ function renderTimeline(){
     const r=e.importance==='foundational'?7:e.importance==='major'?6:e.importance==='significant'?5:4;
     const node=S('circle',{cx:xx,cy:yy,r,class:`timeline-event ${e.importance}`});
     node.dataset.baseR=String(r);node.dataset.cx=String(xx);node.dataset.cy=String(yy);node.tabIndex=0;
-    node.addEventListener('pointermove',q=>tipV(q,`<b>${e.label} · ${e.title}</b><br>${e.summary}${e.source?`<br><span class="tip-note">Source: ${e.source}</span>`:''}${e.date_quality!=='anchored'?`<br><span class="tip-note">Date: ${e.date_quality}</span>`:''}`));
+    const eventSummary=q=>tipV(q,`<b>${e.label} · ${e.title}</b><br>${e.summary}${e.source?`<br><span class="tip-note">Source: ${e.source}</span>`:''}${e.date_quality!=='anchored'?`<br><span class="tip-note">Date: ${e.date_quality}</span>`:''}`);
+    node.addEventListener('pointerenter',eventSummary);
+    node.addEventListener('pointermove',eventSummary);
+    node.addEventListener('focus',eventSummary);
     node.addEventListener('pointerleave',hideTip);
-    node.addEventListener('click',()=>{TFOCUS=e.id;document.getElementById('timelineDetail').innerHTML=`<b>${e.label} · ${e.title}</b><span>${e.summary}</span>${e.source?`<small>Source / discovery layer: ${e.source}</small>`:''}`});
+    node.addEventListener('blur',hideTip);
+    node.addEventListener('click',q=>{TFOCUS=e.id;document.getElementById('timelineDetail').innerHTML=`<b>${e.label} · ${e.title}</b><span>${e.summary}</span>${e.source?`<small>Source / discovery layer: ${e.source}</small>`:''}`; if(q.pointerType==='touch')eventSummary(q)});
     g.appendChild(node);
     const t=S('text',{x:xx+8,y:yy-8,class:'timeline-event-label stacked'});t.dataset.baseX=String(xx);t.dataset.baseY=String(yy);t.dataset.side='right';t.textContent=e.title;g.appendChild(t);
   });

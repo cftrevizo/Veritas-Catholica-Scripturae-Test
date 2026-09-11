@@ -186,3 +186,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
   .timeline-sticky-date-label{font-size:15px;top:7px}
   .timeline-sticky-era-label{top:25px;font-size:9px}
 }
+
+
+/* VCS 1.6 Timeline event readability / hover / full-width lane hotfix */
+.timeline-event-label.stacked{font-size:12px!important;font-weight:680;paint-order:stroke;stroke:#101a26;stroke-width:2.4px;stroke-linejoin:round}
+.timeline-lane-full{stroke:#7f8d99;stroke-opacity:.36;stroke-width:1;vector-effect:non-scaling-stroke;pointer-events:none}
+.timeline-event{cursor:pointer}
+.timeline-event:focus{outline:none;stroke:#fff;stroke-width:2.5}
+@media(max-width:800px){.timeline-event-label.stacked{font-size:11px!important}}
