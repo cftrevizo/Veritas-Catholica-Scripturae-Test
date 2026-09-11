@@ -20,7 +20,7 @@ function renderTimelineGuides(){
   svg.querySelector('#timelineFixedGuides')?.remove();
   if(VTYPE!=='timeline'||!TLAYOUT)return;
   const og=S('g',{id:'timelineFixedGuides',class:'timeline-fixed-guides'}); svg.appendChild(og);
-  const top=-575,bottom=665,axisY=690,step=timelineGridInterval();
+  const top=-575,bottom=665,axisY=708,step=timelineGridInterval();
   const xWorld=yr=>90+(yr-TLAYOUT.min)/(TLAYOUT.max-TLAYOUT.min)*1220;
   const xScreen=yr=>VPANX+VZOOM*xWorld(yr);
   let visibleMin=TLAYOUT.min+(((0-VPANX)/VZOOM)-90)/1220*(TLAYOUT.max-TLAYOUT.min);
@@ -43,7 +43,7 @@ function renderTimelineGuides(){
   og.appendChild(S('line',{x1:0,y1:axisY-12,x2:1400,y2:axisY-12,class:'timeline-axis sticky'}));
   for(const [c,y] of TLAYOUT.ymap.entries()){
     const sy=VPANY+VZOOM*y; if(sy<top+10||sy>bottom-10)continue;
-    const lab=S('text',{x:12,y:sy+4,class:'timeline-lane-label sticky'});lab.textContent=TCAT_LABEL[c]||c;og.appendChild(lab);
+    const lab=S('text',{x:4,y:sy+10,class:'timeline-lane-label sticky'});lab.textContent=TCAT_LABEL[c]||c;og.appendChild(lab);
   }
   const badge=S('text',{x:1385,y:top+18,'text-anchor':'end',class:'timeline-resolution-label'});badge.textContent=`Grid: ${step}-year intervals`;og.appendChild(badge);
 }
