@@ -235,3 +235,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 .ignatius-context{margin-top:1rem;padding:1rem;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}
 .ignatius-context h3{margin:.15rem 0 .4rem}.ignatius-context .button{margin:.35rem .35rem .1rem 0}
 .evidence-chain{margin-top:1rem;padding:.8rem 1rem;border-left:3px solid var(--gold);background:rgba(255,255,255,.025);display:flex;gap:.45rem;flex-wrap:wrap;align-items:center}.evidence-chain span{opacity:.82}.evidence-chain a{margin-left:auto}
+
+/* 1.7 C1-B Review 1: compact progressive disclosure for Unified Evidence Search */
+.evidence-result-wrap.evidence-extra{display:none}
+.evidence-group.evidence-expanded .evidence-result-wrap.evidence-extra{display:block}
+.evidence-more{margin-top:.65rem;border:1px solid var(--line,#46505d);border-radius:999px;background:transparent;color:inherit;padding:.42rem .8rem;cursor:pointer;font:inherit}
+.evidence-more:hover,.evidence-more:focus-visible{border-color:currentColor;outline:none}
