@@ -221,9 +221,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[t
 .passage-range-nav{padding:10px 12px;border:1px solid rgba(36,91,130,.22);border-radius:9px;background:rgba(36,91,130,.05)}.passage-range-title{width:100%}.passage-range-nav .range-return{margin-left:auto}.source-topic-extra.hidden{display:none!important}
 
 
-/* VCS 1.6.0 RC2 final Source Library corrections */
+/* VCS 1.6.0 final Source Library corrections */
 .source-target{scroll-margin-block:110px;outline:3px solid rgba(241,196,91,.95)!important;box-shadow:0 0 0 7px rgba(241,196,91,.18),0 0 28px rgba(241,196,91,.22)!important}
 .provenance-grid,.provenance-grid>div,.provenance-grid span{min-width:0;max-width:100%}
 .provenance-grid span{white-space:normal!important;overflow-wrap:anywhere;word-break:normal;line-height:1.35}
 .provenance-grid .wide{overflow:hidden}
 @media(max-width:700px){.provenance-grid{grid-template-columns:minmax(0,1fr)}.provenance-grid .wide{grid-column:auto}}
+
+/* 1.7 C1-A Unified Evidence Search */
+.evidence-searchbox{max-width:900px;margin-bottom:1rem}.evidence-search-status{margin:.6rem 0 1rem;color:var(--muted,#aab2c0)}.evidence-search-results{display:grid;gap:1rem}.evidence-group{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1rem;background:rgba(255,255,255,.025)}.evidence-group h3{margin:.1rem 0 .7rem}.evidence-items{display:grid;gap:.55rem}.evidence-item{display:block;padding:.72rem .8rem;border:1px solid rgba(255,255,255,.09);border-radius:10px;text-decoration:none;color:inherit;background:rgba(255,255,255,.02)}.evidence-item:hover,.evidence-item:focus{border-color:rgba(212,175,55,.65);background:rgba(212,175,55,.06)}.evidence-item strong{display:block}.evidence-item small{display:block;margin-top:.25rem;color:var(--muted,#aab2c0);line-height:1.4}.evidence-badge{display:inline-block;font-size:.72rem;padding:.12rem .42rem;border:1px solid rgba(255,255,255,.15);border-radius:999px;margin-left:.35rem;vertical-align:middle}.evidence-empty{color:var(--muted,#aab2c0);font-style:italic}@media(max-width:720px){.evidence-searchbox{display:grid;grid-template-columns:1fr}.evidence-searchbox .button{width:100%}}
