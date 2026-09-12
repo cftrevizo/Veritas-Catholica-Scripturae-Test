@@ -1,8 +1,0 @@
-VCS 1.6.0 Release Candidate 2
-
-RC2 is based on the user-tested RC1 baseline and changes only:
-1. Historical Witness -> exact Source Library record scroll/focus/highlight.
-2. Responsive provenance/Citation Precision wrapping.
-3. Source Library -> Timeline enables the required Apostolic scope, Source importance, and clears restrictive category filters so the requested source event is visible.
-
-All other RC1-approved behavior is frozen.
