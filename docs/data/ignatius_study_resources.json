@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.0",
+  "release_target": "1.7.0-C1",
+  "source_page": "https://loc.ignatius.com/catholic-study-bible/",
+  "rights_note": "The official page states the study guides are free to download and use for Bible study. This handoff stores metadata and links, not redistributed PDF copies. Confirm reuse terms before hosting copies or reproducing substantial text.",
+  "records": [
+    {
+      "id": "ignatius-guide-matthew",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Matthew"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Matthew.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-mark",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Mark"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Mark.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-luke",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Luke"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Luke.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-john",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "John"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-John.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-acts",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Acts"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Acts.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-romans",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Romans"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Romans.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-corinthians",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "1 Corinthians",
+        "2 Corinthians"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Corinthians.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-galatians-ephesians",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Galatians",
+        "Ephesians"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Galatians-Ephesians.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-philippians-colossians-philemon",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Philippians",
+        "Colossians",
+        "Philemon"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Philippians-Colossians-Philemon.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-thessalonians-timothy-titus",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "1 Thessalonians",
+        "2 Thessalonians",
+        "1 Timothy",
+        "2 Timothy",
+        "Titus"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Thessalonians-Timothy-Titus.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-hebrews",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Hebrews"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Hebrews.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-james-peter-jude",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "James",
+        "1 Peter",
+        "2 Peter",
+        "Jude"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-James-Peter-Jude.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-john-revelation",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "1 John",
+        "2 John",
+        "3 John",
+        "Revelation"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-John-Revelation.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-genesis",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Genesis"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Genesis.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-exodus",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Exodus"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Exodus.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-deuteronomy",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Deuteronomy"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Deuteronomy.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-joshua",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Joshua"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Joshua.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-judges",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Judges"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Judges.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-ruth",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Ruth"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Ruth.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-1samuel",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "1 Samuel"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-1Samuel.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-2samuel",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "2 Samuel"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-2Samuel.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-1kings",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "1 Kings"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-1Kings.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-2kings",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "2 Kings"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-2Kings.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-tobit",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Tobit"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Tobit.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-judith",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Judith"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Judith.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-esther",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Esther"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Esther.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-job",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Job"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Job.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-psalms",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Psalms"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Psalms.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-proverbs",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Proverbs"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Proverbs.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-ecclesiastes",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Ecclesiastes"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Ecclesiastes.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-song-of-solomon",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Song of Solomon"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Song-of-Solomon.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-wisdom",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Wisdom"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Wisdom.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-sirach",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Sirach"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Sirach.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-isaiah",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Isaiah"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Isaiah.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-ezekiel",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Ezekiel"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Ezekiel.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-daniel",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Daniel"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Daniel.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-minorprophets",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "Hosea",
+        "Joel",
+        "Amos",
+        "Obadiah",
+        "Jonah",
+        "Micah",
+        "Nahum",
+        "Habakkuk",
+        "Zephaniah",
+        "Haggai",
+        "Zechariah",
+        "Malachi"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-MinorProphets.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    },
+    {
+      "id": "ignatius-guide-maccabees",
+      "publisher": "Ignatius Press",
+      "collection": "Ignatius Catholic Study Bible — Official Study Questions",
+      "resource_type": "official_free_study_guide",
+      "books": [
+        "1 Maccabees",
+        "2 Maccabees"
+      ],
+      "url": "https://loc.ignatius.com/catholic-study-bible/download/guides/ICSB-Maccabees.pdf",
+      "access": "Official PDF; Ignatius states these study guides are free to download and use for Bible study.",
+      "vcs_use": "Index/link by book and chapter; do not reproduce commercial commentary; retain publisher attribution."
+    }
+  ]
+}
