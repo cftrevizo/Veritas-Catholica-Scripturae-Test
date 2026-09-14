@@ -1,0 +1,354 @@
+{
+  "schema_version": "0.2.0",
+  "dataset_title": "VCS Miracle Registry — C1.3 Seed Data",
+  "dataset_status": "seed_for_testing_and_future_expansion",
+  "created_utc": "2026-09-13",
+  "scope_note": "VCS indexes public official notices and registries. It does not independently evaluate alleged miracles, reproduce medical dossiers, or treat a record as doctrinal proof.",
+  "recognition_levels": [
+    {
+      "id": "official_church_recognized_cure_registry",
+      "label": "Official Church-recognized cure registry",
+      "meaning": "A responsible Catholic institution publishes a registry stating that a cure has been recognized as miraculous by the Church."
+    },
+    {
+      "id": "vatican_promulgation_decree_notice",
+      "label": "Vatican promulgation decree notice",
+      "meaning": "A Vatican Press Office notice reports papal authorization for the Dicastery for the Causes of Saints to promulgate a decree concerning a miracle attributed to intercession."
+    },
+    {
+      "id": "discernment_norms_reference",
+      "label": "Official discernment-norms reference",
+      "meaning": "A governing Vatican document used to describe discernment categories; it is not itself a recognition record for an event."
+    },
+    {
+      "id": "liturgical_ecclesial_recognition",
+      "label": "Liturgical ecclesial recognition",
+      "meaning": "A Vatican decree establishes a feast or liturgical observance; it is not a medical-miracle finding."
+    },
+    {
+      "id": "vatican_private_revelation_reference",
+      "label": "Vatican private-revelation reference",
+      "meaning": "An official Vatican publication treats a private-revelation tradition in its ecclesial context; it is not obligatory belief."
+    },
+    {
+      "id": "venerated_object_authenticity_unresolved",
+      "label": "Venerated object; authenticity unresolved",
+      "meaning": "An official Church source treats an object as an aid to contemplation or study while leaving authenticity open."
+    },
+    {
+      "id": "canonization_status_record",
+      "label": "Official canonization status",
+      "meaning": "An official Holy See source documents canonization; it does not authenticate every extraordinary claim associated with the saint."
+    },
+    {
+      "id": "official_historical_reference",
+      "label": "Official historical reference",
+      "meaning": "A Holy See source refers to a historical tradition; it is not a modern scientific certification."
+    },
+    {
+      "id": "diocesan_investigation_pastoral_authorization",
+      "label": "Diocesan investigation and pastoral authorization",
+      "meaning": "A diocesan authority documents an inquiry and gives a pastoral direction; it does not make a scientific claim of divinity or establish a universal Vatican finding."
+    }
+  ],
+  "source_documents": [
+    {
+      "id": "lourdes-miraculous-healings-registry",
+      "authority": "Sanctuary of Our Lady of Lourdes",
+      "title": "Miraculous healings",
+      "url": "https://www.lourdes-france.org/en/miraculous-healings/",
+      "source_type": "official_shrine_registry",
+      "publisher_statement": "The page states that 70 cases of unexplained cures have been recognised as miraculous by the Church.",
+      "accessed_utc": "2026-09-13"
+    },
+    {
+      "id": "vatican-decrees-2024-05-23",
+      "authority": "Holy See Press Office / Dicastery for the Causes of Saints",
+      "title": "Promulgation of Decrees of the Dicastery for the Causes of Saints, 23.05.2024",
+      "published_date": "2024-05-23",
+      "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2024/05/23/240523b.html",
+      "source_type": "official_vatican_press_notice",
+      "accessed_utc": "2026-09-13"
+    },
+    {
+      "id": "ddf-norms-2024-05-17",
+      "authority": "Dicastery for the Doctrine of the Faith",
+      "title": "Norms for proceeding in the Discernment of alleged Supernatural Phenomena (17 May 2024)",
+      "published_date": "2024-05-17",
+      "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20240517_norme-fenomeni-soprannaturali_en.html",
+      "source_type": "official_vatican_norms",
+      "accessed_utc": "2026-09-13"
+    },
+    {
+      "id": "vatican-guadalupe-feast-decree-1999",
+      "authority": "Congregation for Divine Worship and the Discipline of the Sacraments",
+      "title": "Decree concerning the Feast of the Blessed Virgin Mary of Guadalupe throughout the Americas",
+      "published_date": "1999-03-25",
+      "url": "https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20000628_guadalupe_sp.html",
+      "source_type": "official_vatican_liturgical_decree",
+      "accessed_utc": "2026-09-14"
+    },
+    {
+      "id": "vatican-fatima-message-2000",
+      "authority": "Congregation for the Doctrine of the Faith",
+      "title": "The Message of Fatima",
+      "published_date": "2000-06-26",
+      "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20000626_message-fatima_en.html",
+      "source_type": "official_vatican_doctrinal_publication",
+      "accessed_utc": "2026-09-14"
+    },
+    {
+      "id": "vatican-shroud-turin-1998",
+      "authority": "Pope John Paul II / Holy See",
+      "title": "Address at the Cathedral of Turin before the Shroud",
+      "published_date": "1998-05-24",
+      "url": "https://www.vatican.va/content/john-paul-ii/en/travels/1998/documents/hf_jp-ii_spe_24051998_sindone.html",
+      "source_type": "official_vatican_papal_address",
+      "accessed_utc": "2026-09-14"
+    },
+    {
+      "id": "vatican-padre-pio-canonization-2002",
+      "authority": "Pope John Paul II / Holy See",
+      "title": "Canonization of St Pio of Pietrelcina",
+      "published_date": "2002-06-16",
+      "url": "https://www.vatican.va/content/john-paul-ii/en/homilies/2002/documents/hf_jp-ii_hom_20020616_padre-pio.html",
+      "source_type": "official_vatican_canonization_homily",
+      "accessed_utc": "2026-09-14"
+    },
+    {
+      "id": "vatican-lanciano-letter-1999",
+      "authority": "Pope John Paul II / Holy See",
+      "title": "Message to the Archbishop of Lanciano-Ortona for the Regional Eucharistic Congress",
+      "published_date": "1999-08-06",
+      "url": "https://www.vatican.va/content/john-paul-ii/pt/letters/1999/documents/hf_jp-ii_let_19990806_arcivescovo-lanciano-ortona.html",
+      "source_type": "official_vatican_papal_message",
+      "accessed_utc": "2026-09-14"
+    },
+    {
+      "id": "legnica-curia-communique",
+      "authority": "Bishop of Legnica / Sanctuary of St Hyacinth",
+      "title": "Communiqué on the Eucharistic Event in the parish of St Hyacinth in Legnica",
+      "url": "https://jacek-legnica-sanktuarium.pl/en/miracles/curia-message",
+      "source_type": "diocesan_curia_communique",
+      "accessed_utc": "2026-09-14"
+    },
+    {
+      "id": "santarem-diocesan-sanctuary",
+      "authority": "Diocese of Santarém",
+      "title": "Sanctuary of the Most Holy Miracle",
+      "url": "https://diocese-santarem.pt/santuario-do-santissimo-milagre/",
+      "source_type": "official_diocesan_sanctuary_reference",
+      "accessed_utc": "2026-09-14"
+    }
+  ],
+  "records": [
+    {
+      "id": "registry-lourdes-recognized-cures",
+      "registry_category": "miracles",
+      "record_type": "registry_summary",
+      "title": "Lourdes: official recognized-cures registry",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_authority": "Sanctuary of Our Lady of Lourdes",
+      "recognition_summary": "The official registry page states that 70 cases of unexplained cures have been recognised as miraculous by the Church.",
+      "reported_record_count": 70,
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "Marian devotion", "registry"],
+      "vcs_boundary_note": "This summary indexes the registry's own statement and count; individual records require their own source-linked entries."
+    },
+    {
+      "id": "lourdes-cure-catherine-latapie-1862",
+      "registry_category": "miracles",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Catherine Latapie",
+      "place": "Loubajac, France",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "1862-01-18",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "lourdes-cure-pierre-de-rudder-1908",
+      "registry_category": "miracles",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Pierre De Rudder",
+      "place": "Jabbeke, Belgium",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "1908-07-25",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "lourdes-cure-jean-pierre-bely-1999",
+      "registry_category": "miracles",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Jean-Pierre Bély",
+      "place": "La Couronne, France",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "1999-02-09",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "lourdes-cure-bernadette-moriau-2018",
+      "registry_category": "miracles",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Sister Bernadette Moriau",
+      "place": "Beauvais, France",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "2018-02-11",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "vatican-decree-allamano-2024-05-23",
+      "registry_category": "saints_causes",
+      "record_type": "vatican_decree_notice_entry",
+      "title": "Miracle attributed to the intercession of Blessed Giuseppe Allamano",
+      "subject_person": "Blessed Giuseppe Allamano",
+      "recognition_level": "vatican_promulgation_decree_notice",
+      "recognition_authority": "Dicastery for the Causes of Saints",
+      "notice_date": "2024-05-23",
+      "source_document_id": "vatican-decrees-2024-05-23",
+      "tags": ["canonization cause", "intercession", "Vatican decree"],
+      "vcs_boundary_note": "The source is a press notice of authorization to promulgate a decree. VCS does not add clinical details not contained in that notice."
+    },
+    {
+      "id": "vatican-decree-carlo-acutis-2024-05-23",
+      "registry_category": "saints_causes",
+      "record_type": "vatican_decree_notice_entry",
+      "title": "Miracle attributed to the intercession of Blessed Carlo Acutis",
+      "subject_person": "Blessed Carlo Acutis",
+      "recognition_level": "vatican_promulgation_decree_notice",
+      "recognition_authority": "Dicastery for the Causes of Saints",
+      "notice_date": "2024-05-23",
+      "source_document_id": "vatican-decrees-2024-05-23",
+      "tags": ["canonization cause", "intercession", "Vatican decree"],
+      "vcs_boundary_note": "The source is a press notice of authorization to promulgate a decree. VCS does not add clinical details not contained in that notice."
+    },
+    {
+      "id": "vatican-decree-giovanni-merlini-2024-05-23",
+      "registry_category": "saints_causes",
+      "record_type": "vatican_decree_notice_entry",
+      "title": "Miracle attributed to the intercession of Venerable Servant of God Giovanni Merlini",
+      "subject_person": "Venerable Servant of God Giovanni Merlini",
+      "recognition_level": "vatican_promulgation_decree_notice",
+      "recognition_authority": "Dicastery for the Causes of Saints",
+      "notice_date": "2024-05-23",
+      "source_document_id": "vatican-decrees-2024-05-23",
+      "tags": ["canonization cause", "intercession", "Vatican decree"],
+      "vcs_boundary_note": "The source is a press notice of authorization to promulgate a decree. VCS does not add clinical details not contained in that notice."
+    },
+    {
+      "id": "ddf-discernment-norms-2024-05-17",
+      "registry_category": "discernment",
+      "record_type": "discernment_norms_reference",
+      "title": "Norms for proceeding in the Discernment of alleged Supernatural Phenomena",
+      "recognition_level": "discernment_norms_reference",
+      "recognition_authority": "Dicastery for the Doctrine of the Faith",
+      "notice_date": "2024-05-17",
+      "source_document_id": "ddf-norms-2024-05-17",
+      "tags": ["private revelation", "apparitions", "discernment", "Vatican norms"],
+      "vcs_boundary_note": "This is a governing discernment document, not an approval or recognition record for any particular alleged phenomenon."
+    },
+    {
+      "id": "guadalupe-liturgical-recognition-1999",
+      "registry_category": "apparitions_devotions",
+      "record_type": "liturgical_decree_record",
+      "title": "Our Lady of Guadalupe: feast established throughout the Americas",
+      "place": "Tepeyac / Mexico City, Mexico",
+      "recognition_level": "liturgical_ecclesial_recognition",
+      "recognition_authority": "Congregation for Divine Worship and the Discipline of the Sacraments",
+      "notice_date": "1999-03-25",
+      "source_document_id": "vatican-guadalupe-feast-decree-1999",
+      "tags": ["Guadalupe", "Marian devotion", "liturgy", "Americas"],
+      "vcs_boundary_note": "This record indexes a Vatican liturgical decree. Liturgical observance does not add to public Revelation or convert this record into a medical-miracle finding."
+    },
+    {
+      "id": "fatima-vatican-reference-2000",
+      "registry_category": "apparitions_devotions",
+      "record_type": "private_revelation_reference",
+      "title": "Fatima: Vatican doctrinal publication on the message",
+      "place": "Fátima, Portugal",
+      "recognition_level": "vatican_private_revelation_reference",
+      "recognition_authority": "Congregation for the Doctrine of the Faith",
+      "notice_date": "2000-06-26",
+      "source_document_id": "vatican-fatima-message-2000",
+      "tags": ["Fatima", "private revelation", "Marian devotion", "discernment"],
+      "vcs_boundary_note": "Private revelations do not belong to the deposit of faith and are not obligatory belief; this record preserves an official Vatican source for further study."
+    },
+    {
+      "id": "shroud-turin-veneration-1998",
+      "registry_category": "relics_sacred_images",
+      "record_type": "venerated_object_record",
+      "title": "Shroud of Turin: veneration and study",
+      "place": "Turin, Italy",
+      "recognition_level": "venerated_object_authenticity_unresolved",
+      "recognition_authority": "Pope John Paul II / Holy See",
+      "notice_date": "1998-05-24",
+      "source_document_id": "vatican-shroud-turin-1998",
+      "tags": ["Shroud of Turin", "relic", "sacred image", "veneration"],
+      "vcs_boundary_note": "The Holy See source presents the Shroud as an aid to contemplation and study; it does not settle its authenticity, which is not a matter of faith."
+    },
+    {
+      "id": "padre-pio-canonization-2002",
+      "registry_category": "saints_causes",
+      "record_type": "canonization_status_record",
+      "title": "St Pio of Pietrelcina (Padre Pio): canonization",
+      "place": "Rome, Italy",
+      "recognition_level": "canonization_status_record",
+      "recognition_authority": "Pope John Paul II / Holy See",
+      "notice_date": "2002-06-16",
+      "source_document_id": "vatican-padre-pio-canonization-2002",
+      "tags": ["Padre Pio", "St Pio of Pietrelcina", "canonization", "saints"],
+      "vcs_boundary_note": "This entry documents canonization. Individual extraordinary reports associated with a saint require their own reliable sourcing and are not authenticated by this status record alone."
+    },
+    {
+      "id": "lanciano-holy-see-reference-1999",
+      "registry_category": "eucharistic_signs",
+      "record_type": "official_historical_reference",
+      "title": "Lanciano: Holy See historical reference to the Eucharistic tradition",
+      "place": "Lanciano, Italy",
+      "recognition_level": "official_historical_reference",
+      "recognition_authority": "Pope John Paul II / Holy See",
+      "notice_date": "1999-08-06",
+      "source_document_id": "vatican-lanciano-letter-1999",
+      "tags": ["Lanciano", "Eucharistic sign", "Eucharistic devotion", "historical reference"],
+      "vcs_boundary_note": "This source refers to a historic Eucharistic tradition. VCS adds no laboratory or scientific conclusion, and the record is not a substitute for the Church's doctrine of the Real Presence."
+    },
+    {
+      "id": "legnica-diocesan-communique-2016",
+      "registry_category": "eucharistic_signs",
+      "record_type": "diocesan_investigation_and_pastoral_authorization",
+      "title": "Legnica: diocesan communiqué on the Eucharistic event",
+      "place": "Legnica, Poland",
+      "recognition_level": "diocesan_investigation_pastoral_authorization",
+      "recognition_authority": "Bishop of Legnica",
+      "notice_date": "2016-04-17",
+      "source_document_id": "legnica-curia-communique",
+      "tags": ["Legnica", "Eucharistic sign", "diocesan investigation", "pastoral authorization"],
+      "vcs_boundary_note": "The diocesan communiqué describes an inquiry, reported tests, consultation with the Holy See, and preparation for veneration. VCS does not convert its pastoral language or reported findings into a scientific proof of divinity."
+    },
+    {
+      "id": "santarem-diocesan-sanctuary-reference",
+      "registry_category": "eucharistic_signs",
+      "record_type": "diocesan_sanctuary_historical_reference",
+      "title": "Santarém: diocesan sanctuary for the Most Holy Miracle tradition",
+      "place": "Santarém, Portugal",
+      "recognition_level": "official_historical_reference",
+      "recognition_authority": "Diocese of Santarém",
+      "source_document_id": "santarem-diocesan-sanctuary",
+      "tags": ["Santarém", "Eucharistic sign", "sanctuary", "historical tradition"],
+      "vcs_boundary_note": "This entry records the diocesan sanctuary's custodianship of a historic Eucharistic tradition. It does not independently establish the underlying event or add scientific conclusions."
+    }
+  ],
+  "future_expansion_rules": [
+    "Add an individual record only when its exact wording and recognition status can be traced to a primary official source.",
+    "Retain the source document title, issuer, date, URL, and source-specific language.",
+    "Do not use 'approved miracle' as a generic label for private revelations, canonization decrees, registry cures, or alleged phenomena.",
+    "Store medical or investigative details only when they are present in a source that VCS is permitted to summarize or quote."
+  ]
+}
