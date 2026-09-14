@@ -1,0 +1,164 @@
+{
+  "schema_version": "0.1.0",
+  "dataset_title": "VCS Miracle Recognition Registry — Seed Data",
+  "dataset_status": "seed_for_testing_and_future_expansion",
+  "created_utc": "2026-09-13",
+  "scope_note": "VCS indexes public official notices and registries. It does not independently evaluate alleged miracles, reproduce medical dossiers, or treat a record as doctrinal proof.",
+  "recognition_levels": [
+    {
+      "id": "official_church_recognized_cure_registry",
+      "label": "Official Church-recognized cure registry",
+      "meaning": "A responsible Catholic institution publishes a registry stating that a cure has been recognized as miraculous by the Church."
+    },
+    {
+      "id": "vatican_promulgation_decree_notice",
+      "label": "Vatican promulgation decree notice",
+      "meaning": "A Vatican Press Office notice reports papal authorization for the Dicastery for the Causes of Saints to promulgate a decree concerning a miracle attributed to intercession."
+    },
+    {
+      "id": "discernment_norms_reference",
+      "label": "Official discernment-norms reference",
+      "meaning": "A governing Vatican document used to describe discernment categories; it is not itself a recognition record for an event."
+    }
+  ],
+  "source_documents": [
+    {
+      "id": "lourdes-miraculous-healings-registry",
+      "authority": "Sanctuary of Our Lady of Lourdes",
+      "title": "Miraculous healings",
+      "url": "https://www.lourdes-france.org/en/miraculous-healings/",
+      "source_type": "official_shrine_registry",
+      "publisher_statement": "The page states that 70 cases of unexplained cures have been recognised as miraculous by the Church.",
+      "accessed_utc": "2026-09-13"
+    },
+    {
+      "id": "vatican-decrees-2024-05-23",
+      "authority": "Holy See Press Office / Dicastery for the Causes of Saints",
+      "title": "Promulgation of Decrees of the Dicastery for the Causes of Saints, 23.05.2024",
+      "published_date": "2024-05-23",
+      "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2024/05/23/240523b.html",
+      "source_type": "official_vatican_press_notice",
+      "accessed_utc": "2026-09-13"
+    },
+    {
+      "id": "ddf-norms-2024-05-17",
+      "authority": "Dicastery for the Doctrine of the Faith",
+      "title": "Norms for proceeding in the Discernment of alleged Supernatural Phenomena (17 May 2024)",
+      "published_date": "2024-05-17",
+      "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20240517_norme-fenomeni-soprannaturali_en.html",
+      "source_type": "official_vatican_norms",
+      "accessed_utc": "2026-09-13"
+    }
+  ],
+  "records": [
+    {
+      "id": "registry-lourdes-recognized-cures",
+      "record_type": "registry_summary",
+      "title": "Lourdes: official recognized-cures registry",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_authority": "Sanctuary of Our Lady of Lourdes",
+      "recognition_summary": "The official registry page states that 70 cases of unexplained cures have been recognised as miraculous by the Church.",
+      "reported_record_count": 70,
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "Marian devotion", "registry"],
+      "vcs_boundary_note": "This summary indexes the registry's own statement and count; individual records require their own source-linked entries."
+    },
+    {
+      "id": "lourdes-cure-catherine-latapie-1862",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Catherine Latapie",
+      "place": "Loubajac, France",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "1862-01-18",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "lourdes-cure-pierre-de-rudder-1908",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Pierre De Rudder",
+      "place": "Jabbeke, Belgium",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "1908-07-25",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "lourdes-cure-jean-pierre-bely-1999",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Jean-Pierre Bély",
+      "place": "La Couronne, France",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "1999-02-09",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "lourdes-cure-bernadette-moriau-2018",
+      "record_type": "individual_cure_registry_entry",
+      "person": "Sister Bernadette Moriau",
+      "place": "Beauvais, France",
+      "recognition_level": "official_church_recognized_cure_registry",
+      "recognition_date": "2018-02-11",
+      "source_document_id": "lourdes-miraculous-healings-registry",
+      "tags": ["Lourdes", "healing", "registry"],
+      "vcs_boundary_note": "Names and recognition date are transcribed from the official registry; no medical conclusion is added by VCS."
+    },
+    {
+      "id": "vatican-decree-allamano-2024-05-23",
+      "record_type": "vatican_decree_notice_entry",
+      "title": "Miracle attributed to the intercession of Blessed Giuseppe Allamano",
+      "subject_person": "Blessed Giuseppe Allamano",
+      "recognition_level": "vatican_promulgation_decree_notice",
+      "recognition_authority": "Dicastery for the Causes of Saints",
+      "notice_date": "2024-05-23",
+      "source_document_id": "vatican-decrees-2024-05-23",
+      "tags": ["canonization cause", "intercession", "Vatican decree"],
+      "vcs_boundary_note": "The source is a press notice of authorization to promulgate a decree. VCS does not add clinical details not contained in that notice."
+    },
+    {
+      "id": "vatican-decree-carlo-acutis-2024-05-23",
+      "record_type": "vatican_decree_notice_entry",
+      "title": "Miracle attributed to the intercession of Blessed Carlo Acutis",
+      "subject_person": "Blessed Carlo Acutis",
+      "recognition_level": "vatican_promulgation_decree_notice",
+      "recognition_authority": "Dicastery for the Causes of Saints",
+      "notice_date": "2024-05-23",
+      "source_document_id": "vatican-decrees-2024-05-23",
+      "tags": ["canonization cause", "intercession", "Vatican decree"],
+      "vcs_boundary_note": "The source is a press notice of authorization to promulgate a decree. VCS does not add clinical details not contained in that notice."
+    },
+    {
+      "id": "vatican-decree-giovanni-merlini-2024-05-23",
+      "record_type": "vatican_decree_notice_entry",
+      "title": "Miracle attributed to the intercession of Venerable Servant of God Giovanni Merlini",
+      "subject_person": "Venerable Servant of God Giovanni Merlini",
+      "recognition_level": "vatican_promulgation_decree_notice",
+      "recognition_authority": "Dicastery for the Causes of Saints",
+      "notice_date": "2024-05-23",
+      "source_document_id": "vatican-decrees-2024-05-23",
+      "tags": ["canonization cause", "intercession", "Vatican decree"],
+      "vcs_boundary_note": "The source is a press notice of authorization to promulgate a decree. VCS does not add clinical details not contained in that notice."
+    },
+    {
+      "id": "ddf-discernment-norms-2024-05-17",
+      "record_type": "discernment_norms_reference",
+      "title": "Norms for proceeding in the Discernment of alleged Supernatural Phenomena",
+      "recognition_level": "discernment_norms_reference",
+      "recognition_authority": "Dicastery for the Doctrine of the Faith",
+      "notice_date": "2024-05-17",
+      "source_document_id": "ddf-norms-2024-05-17",
+      "tags": ["private revelation", "apparitions", "discernment", "Vatican norms"],
+      "vcs_boundary_note": "This is a governing discernment document, not an approval or recognition record for any particular alleged phenomenon."
+    }
+  ],
+  "future_expansion_rules": [
+    "Add an individual record only when its exact wording and recognition status can be traced to a primary official source.",
+    "Retain the source document title, issuer, date, URL, and source-specific language.",
+    "Do not use 'approved miracle' as a generic label for private revelations, canonization decrees, registry cures, or alleged phenomena.",
+    "Store medical or investigative details only when they are present in a source that VCS is permitted to summarize or quote."
+  ]
+}
