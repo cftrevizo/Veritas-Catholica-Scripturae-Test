@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "title": "Learning the Catechism",
+  "source_boundary": "VCS supplies a curated route, paragraph references, and official links. It does not reproduce the Catechism's copyrighted text. The Catechism of the Catholic Church is the doctrinal authority for this path.",
+  "source_documents": [
+    {
+      "id": "ccc-vatican-en",
+      "title": "Catechism of the Catholic Church — official English edition",
+      "authority": "The Holy See / Libreria Editrice Vaticana",
+      "url": "https://www.vatican.va/archive/ENG0015/_INDEX.HTM",
+      "use": "Official reading destination and citation authority"
+    }
+  ],
+  "parts": [
+    {
+      "id": "profession-of-faith",
+      "order": 1,
+      "title": "The Creed",
+      "official_title": "Part One: The Profession of Faith",
+      "ccc_range": "CCC 1–1065",
+      "official_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "summary": "Learn what the Church professes: revelation, the Trinity, creation, Jesus Christ, the Church, and the Christian hope.",
+      "modules": [
+        {"id":"revelation","title":"God reveals himself","ccc_range":"CCC 26–184","related_topics":["Divine Revelation: How God Makes Himself Known","Sacred Tradition","Scripture, Tradition and Magisterium Together"]},
+        {"id":"trinity","title":"The Triune God","ccc_range":"CCC 232–267","related_topics":["The Trinity"]},
+        {"id":"creation","title":"Creation, the human person, and the fall","ccc_range":"CCC 279–421","related_topics":["Creation and Providence"]},
+        {"id":"jesus","title":"Jesus Christ and the work of salvation","ccc_range":"CCC 422–682","related_topics":["Divinity of Jesus","The Resurrection of Jesus"]},
+        {"id":"church","title":"The Holy Catholic Church","ccc_range":"CCC 748–975","related_topics":["The Church","Apostolic Church","Mary"]},
+        {"id":"last-things","title":"Forgiveness, resurrection, and life everlasting","ccc_range":"CCC 976–1065","related_topics":["Forgiveness of Sins","Salvation: Future Hope","Prayer for the Dead"]}
+      ]
+    },
+    {
+      "id": "christian-mystery",
+      "order": 2,
+      "title": "The Sacraments",
+      "official_title": "Part Two: The Celebration of the Christian Mystery",
+      "ccc_range": "CCC 1066–1690",
+      "official_url": "https://www.vatican.va/content/catechism/en/part_two.html",
+      "summary": "Study how Christ's saving work is celebrated in the Church's liturgy and seven sacraments.",
+      "modules": [
+        {"id":"liturgy","title":"Liturgy and the sacramental economy","ccc_range":"CCC 1066–1209","related_topics":["The Mass and the Book of Revelation"]},
+        {"id":"baptism-confirmation","title":"Baptism and Confirmation","ccc_range":"CCC 1210–1321","related_topics":["Baptism","Baptismal Regeneration","Infant Baptism"]},
+        {"id":"eucharist","title":"The Eucharist","ccc_range":"CCC 1322–1419","related_topics":["Eucharist / Holy Communion","The Eucharist as Sacrifice","Early Christians and the Eucharist"]},
+        {"id":"reconciliation","title":"Reconciliation and anointing of the sick","ccc_range":"CCC 1420–1532","related_topics":["Penance / Reconciliation / Confession","Redemptive Suffering and Carrying the Cross"]},
+        {"id":"communion","title":"Holy Orders and Matrimony","ccc_range":"CCC 1533–1666","related_topics":["Holy Orders","Matrimony / Christian Marriage"]},
+        {"id":"sacramentals","title":"Sacramentals and Christian funerals","ccc_range":"CCC 1667–1690","related_topics":["Prayer for the Dead"]}
+      ]
+    },
+    {
+      "id": "life-in-christ",
+      "order": 3,
+      "title": "Life in Christ",
+      "official_title": "Part Three: Life in Christ",
+      "ccc_range": "CCC 1691–2557",
+      "official_url": "https://www.vatican.va/content/catechism/en/part_three.html",
+      "summary": "Learn the Christian vocation: dignity, freedom, conscience, virtue, grace, the commandments, and love of neighbor.",
+      "modules": [
+        {"id":"vocation","title":"Human dignity, freedom, and conscience","ccc_range":"CCC 1691–1802","related_topics":["Natural Law and Conscience"]},
+        {"id":"virtue","title":"Virtue, sin, and grace","ccc_range":"CCC 1803–2005","related_topics":["Theological Virtues: Faith, Hope and Charity","Grace, Merit and Cooperation with God"]},
+        {"id":"church-moral","title":"The Church as mother and teacher","ccc_range":"CCC 2030–2051","related_topics":["Authority of the Church"]},
+        {"id":"commandments","title":"The Ten Commandments in the New Covenant","ccc_range":"CCC 2052–2557","related_topics":["The Ten Commandments in the New Covenant"]}
+      ]
+    },
+    {
+      "id": "christian-prayer",
+      "order": 4,
+      "title": "Christian Prayer",
+      "official_title": "Part Four: Christian Prayer",
+      "ccc_range": "CCC 2558–2865",
+      "official_url": "https://www.vatican.va/content/catechism/en/part_four.html",
+      "summary": "Learn prayer as communion with God: its forms, sources, difficulties, the communion of saints, and the Lord's Prayer.",
+      "modules": [
+        {"id":"call-to-prayer","title":"The universal call to prayer","ccc_range":"CCC 2558–2565","related_topics":["Christian Prayer"]},
+        {"id":"forms","title":"Blessing, petition, intercession, thanksgiving, and praise","ccc_range":"CCC 2626–2649","related_topics":["Christian Prayer","Intercessory Prayer of Saints"]},
+        {"id":"tradition","title":"The Tradition of prayer and its guides","ccc_range":"CCC 2650–2696","related_topics":["Do the Saints Hear Our Prayers?","The Hail Mary in Scripture"]},
+        {"id":"life-of-prayer","title":"Meditation, contemplation, and the struggle of prayer","ccc_range":"CCC 2697–2758","related_topics":["Repetitious Prayer","Christian Prayer"]},
+        {"id":"our-father","title":"The Lord's Prayer","ccc_range":"CCC 2759–2865","related_topics":["Christian Prayer"]}
+      ]
+    }
+  ]
+}
