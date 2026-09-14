@@ -1,0 +1,976 @@
+{
+  "version": "1.6.0-c4",
+  "record_count": 33,
+  "records": [
+    {
+      "id": "af-001",
+      "author": "Clement of Rome",
+      "work": "1 Clement",
+      "date": "c. AD 96",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Church & Authority",
+        "Apostolic Succession",
+        "Unity",
+        "Ministry"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Apostolic Succession",
+        "Apostolic Succession: “Authority Ended With the Apostles”",
+        "Early Christians and Apostolic Succession",
+        "Irenaeus, Polycarp and Apostolic Succession",
+        "Clement of Rome and Apostolic Ministry",
+        "A Visible Church and Christian Unity"
+      ]
+    },
+    {
+      "id": "af-002",
+      "author": "Anonymous / traditionally Clement",
+      "work": "2 Clement",
+      "date": "c. AD 100–150",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Christology",
+        "Moral Life",
+        "Repentance"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Abortion",
+        "Alcohol / Wine",
+        "Almsgiving",
+        "Born Again: Water and the Spirit",
+        "Can Salvation Be Lost?",
+        "Cardinal Virtues"
+      ]
+    },
+    {
+      "id": "af-003",
+      "author": "Ignatius of Antioch",
+      "work": "Letter to the Ephesians",
+      "date": "c. AD 107",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Eucharist",
+        "Bishop",
+        "Church Unity",
+        "Christology"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "af-004",
+      "author": "Ignatius of Antioch",
+      "work": "Letter to the Magnesians",
+      "date": "c. AD 107",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Bishop",
+        "Sunday Worship",
+        "Church Unity"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Ignatius of Antioch and the Catholic Church",
+        "Protestant: “Sunday Worship Is a Catholic Corruption”",
+        "Sunday Worship and the Lord’s Day",
+        "Sunday Worship: “Christians Must Keep the Seventh-Day Sabbath”",
+        "A Visible Church and Christian Unity",
+        "Islam: “The Trinity Means Christians Worship Three Gods”"
+      ]
+    },
+    {
+      "id": "af-005",
+      "author": "Ignatius of Antioch",
+      "work": "Letter to the Trallians",
+      "date": "c. AD 107",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Bishop",
+        "Deacons",
+        "Church Unity"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Ignatius of Antioch and the Catholic Church",
+        "A Visible Church and Christian Unity",
+        "Unity of the Church"
+      ]
+    },
+    {
+      "id": "af-006",
+      "author": "Ignatius of Antioch",
+      "work": "Letter to the Romans",
+      "date": "c. AD 107",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Martyrdom",
+        "Church of Rome"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Ignatius of Antioch and the Catholic Church",
+        "Clement of Rome and Apostolic Ministry",
+        "Councils of Rome, Hippo and Carthage and the Canon"
+      ]
+    },
+    {
+      "id": "af-007",
+      "author": "Ignatius of Antioch",
+      "work": "Letter to the Philadelphians",
+      "date": "c. AD 107",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Church Unity",
+        "Bishop",
+        "Eucharist"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "af-008",
+      "author": "Ignatius of Antioch",
+      "work": "Letter to the Smyrnaeans",
+      "date": "c. AD 107",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Eucharist",
+        "Catholic Church",
+        "Bishop",
+        "Resurrection"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "af-009",
+      "author": "Ignatius of Antioch",
+      "work": "Letter to Polycarp",
+      "date": "c. AD 107",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Bishop",
+        "Marriage",
+        "Pastoral Ministry"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Ignatius of Antioch and the Catholic Church",
+        "Annulments and the Marriage Bond",
+        "Clement of Rome and Apostolic Ministry",
+        "Irenaeus, Polycarp and Apostolic Succession",
+        "Matrimony / Christian Marriage",
+        "Polycarp and the Apostolic Generation"
+      ]
+    },
+    {
+      "id": "af-010",
+      "author": "Polycarp of Smyrna",
+      "work": "Letter to the Philippians",
+      "date": "c. AD 110–140",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Salvation",
+        "Moral Life",
+        "Presbyters"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Abortion",
+        "Alcohol / Wine",
+        "Almsgiving",
+        "Born Again: Water and the Spirit",
+        "Can Salvation Be Lost?",
+        "Cardinal Virtues"
+      ]
+    },
+    {
+      "id": "af-011",
+      "author": "Anonymous",
+      "work": "Didache",
+      "date": "c. AD 70–120",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Baptism",
+        "Eucharist",
+        "Fasting",
+        "Church Order",
+        "Moral Life"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "af-012",
+      "author": "Anonymous",
+      "work": "Epistle of Barnabas",
+      "date": "c. AD 70–135",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Typology",
+        "Covenant",
+        "Moral Life"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "The Ten Commandments in the New Covenant",
+        "Abortion",
+        "Alcohol / Wine",
+        "Almsgiving",
+        "Born Again: Water and the Spirit",
+        "Can Salvation Be Lost?"
+      ]
+    },
+    {
+      "id": "af-013",
+      "author": "Hermas",
+      "work": "Shepherd of Hermas",
+      "date": "c. AD 100–150",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Repentance",
+        "Post-baptismal Sin",
+        "Church"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Baptismal Regeneration",
+        "Mortal and Venial Sin",
+        "Original Sin"
+      ]
+    },
+    {
+      "id": "af-014",
+      "author": "Anonymous",
+      "work": "Martyrdom of Polycarp",
+      "date": "c. AD 155–160",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Martyrdom",
+        "Saints",
+        "Prayer"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Intercessory Prayer of Saints",
+        "Repetitious Prayer",
+        "Angels and Guardian Angels",
+        "Assumption and Coronation of Mary",
+        "Canonization and the Recognition of Saints",
+        "Christian Prayer"
+      ]
+    },
+    {
+      "id": "af-015",
+      "author": "Anonymous",
+      "work": "Epistle to Diognetus",
+      "date": "c. AD 130–200",
+      "era": "Apostolic Fathers",
+      "kind": "Primary patristic text",
+      "topics": [
+        "Christian Identity",
+        "Incarnation",
+        "Moral Witness"
+      ],
+      "primary_url": "https://github.com/jtauber/apostolic-fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "CC BY-SA 4.0 applies to Open Apostolic Fathers Greek text; reader translations may have separate terms.",
+      "status": "Indexed",
+      "notes": "Open Apostolic Fathers provides a corrected Lake Greek text; VCS indexes metadata and links rather than silently treating translations as equivalent.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Abortion",
+        "Alcohol / Wine",
+        "Almsgiving",
+        "Born Again: Water and the Spirit",
+        "Can Salvation Be Lost?",
+        "Cardinal Virtues"
+      ]
+    },
+    {
+      "id": "pat-justin",
+      "author": "Justin Martyr",
+      "work": "First Apology; Dialogue with Trypho",
+      "date": "c. AD 150–160",
+      "era": "Ante-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Eucharist",
+        "Baptism",
+        "Sunday Worship",
+        "Messianic Prophecy",
+        "Christian Worship"
+      ],
+      "primary_url": "https://www.ccel.org/ccel/schaff/anf01",
+      "reader_url": "https://www.newadvent.org/fathers/0126.htm",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "pat-irenaeus",
+      "author": "Irenaeus of Lyons",
+      "work": "Against Heresies",
+      "date": "c. AD 180",
+      "era": "Ante-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Apostolic Succession",
+        "Church of Rome",
+        "Eucharist",
+        "Mary as New Eve",
+        "Scripture & Tradition"
+      ],
+      "primary_url": "https://www.ccel.org/ccel/schaff/anf01",
+      "reader_url": "https://www.newadvent.org/fathers/0103.htm",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Irenaeus, Polycarp and Apostolic Succession",
+        "Apostolic Succession",
+        "Apostolic Succession: “Authority Ended With the Apostles”",
+        "Early Christians and Apostolic Succession",
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion"
+      ]
+    },
+    {
+      "id": "pat-tertullian",
+      "author": "Tertullian",
+      "work": "Selected Treatises",
+      "date": "c. AD 197–220",
+      "era": "Ante-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Baptism",
+        "Tradition",
+        "Prayer for the Dead",
+        "Christian Practice"
+      ],
+      "primary_url": "https://www.ccel.org/ccel/schaff/anf03",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Prayer for the Dead",
+        "Baptism",
+        "Christian Prayer",
+        "Infant Baptism",
+        "Infant Baptism: “Only Believers Who Can Personally Profess Faith May Be Baptized”",
+        "Intercessory Prayer of Saints"
+      ]
+    },
+    {
+      "id": "pat-hippolytus",
+      "author": "Hippolytus of Rome",
+      "work": "Selected Writings",
+      "date": "c. AD 200–235",
+      "era": "Ante-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Church Order",
+        "Baptism",
+        "Eschatology"
+      ],
+      "primary_url": "https://www.ccel.org/ccel/schaff/anf05",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Baptism",
+        "Clement of Rome and Apostolic Ministry",
+        "Councils of Rome, Hippo and Carthage and the Canon",
+        "Infant Baptism",
+        "Infant Baptism: “Only Believers Who Can Personally Profess Faith May Be Baptized”",
+        "The Millennium and Catholic Eschatology"
+      ]
+    },
+    {
+      "id": "pat-cyprian",
+      "author": "Cyprian of Carthage",
+      "work": "Epistles and Treatises",
+      "date": "c. AD 248–258",
+      "era": "Ante-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Church Unity",
+        "Bishop",
+        "Eucharist",
+        "Penance",
+        "Papacy"
+      ],
+      "primary_url": "https://www.ccel.org/ccel/schaff/anf05",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "pat-origen",
+      "author": "Origen",
+      "work": "Against Celsus; Commentaries",
+      "date": "c. AD 230–250",
+      "era": "Ante-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Scripture Interpretation",
+        "Prayer",
+        "Typology",
+        "Apologetics"
+      ],
+      "primary_url": "https://www.ccel.org/ccel/schaff/anf04",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Prophecy, Typology and Allusion: Not the Same Claim",
+        "The Four Senses of Scripture and Biblical Typology",
+        "2 Timothy 3:16–17 and the Sufficiency Question",
+        "Acts 17:11 and the Bereans",
+        "Christian Prayer",
+        "Councils of Rome, Hippo and Carthage and the Canon"
+      ]
+    },
+    {
+      "id": "pat-athanasius",
+      "author": "Athanasius",
+      "work": "On the Incarnation; Against the Arians",
+      "date": "c. AD 318–370",
+      "era": "Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Trinity",
+        "Divinity of Christ",
+        "Incarnation",
+        "Canon"
+      ],
+      "primary_url": "https://www.ccel.org/fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "2 Timothy 3:16–17 and the Sufficiency Question",
+        "Acts 17:11 and the Bereans",
+        "Councils of Rome, Hippo and Carthage and the Canon",
+        "Deuterocanonical Books",
+        "Divinity of Jesus",
+        "Historical Myth: “Nicaea Invented the Divinity of Jesus”"
+      ]
+    },
+    {
+      "id": "pat-cyrilj",
+      "author": "Cyril of Jerusalem",
+      "work": "Catechetical Lectures",
+      "date": "c. AD 350",
+      "era": "Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Baptism",
+        "Confirmation",
+        "Eucharist",
+        "Creed",
+        "Catechesis"
+      ],
+      "primary_url": "https://www.ccel.org/fathers",
+      "reader_url": "https://www.newadvent.org/fathers/3101.htm",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "pat-basil",
+      "author": "Basil the Great",
+      "work": "On the Holy Spirit; Letters",
+      "date": "c. AD 360–378",
+      "era": "Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Holy Spirit",
+        "Tradition",
+        "Liturgy"
+      ],
+      "primary_url": "https://www.ccel.org/fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Jehovah’s Witness: “The Holy Spirit Is Only an Active Force”",
+        "The Holy Spirit is a Divine Person",
+        "Born Again: Water and the Spirit",
+        "Eucharist / Holy Communion",
+        "Holy Orders",
+        "Mormonism: “The Church Fell into a Total Great Apostasy”"
+      ]
+    },
+    {
+      "id": "pat-ambrose",
+      "author": "Ambrose of Milan",
+      "work": "On the Mysteries; On Repentance",
+      "date": "c. AD 380–390",
+      "era": "Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Sacraments",
+        "Eucharist",
+        "Baptism",
+        "Penance"
+      ],
+      "primary_url": "https://www.ccel.org/fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "Early Christians and the Eucharist",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "pat-augustine",
+      "author": "Augustine of Hippo",
+      "work": "Selected Works",
+      "date": "c. AD 390–430",
+      "era": "Post-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Grace",
+        "Baptism",
+        "Church",
+        "Eucharist",
+        "Scripture",
+        "Purgatory/Prayer for Dead"
+      ],
+      "primary_url": "https://www.ccel.org/fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "Melchizedek, Priesthood and Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "pat-jerome",
+      "author": "Jerome",
+      "work": "Letters; Against Jovinianus; Illustrious Men",
+      "date": "c. AD 380–420",
+      "era": "Post-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Scripture",
+        "Canon",
+        "Mary",
+        "Virginity",
+        "Church History"
+      ],
+      "primary_url": "https://www.ccel.org/fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "The Dead Sea Scrolls and Old Testament Textual History",
+        "The Vulgate and St. Jerome",
+        "2 Timothy 3:16–17 and the Sufficiency Question",
+        "Acts 17:11 and the Bereans",
+        "Councils of Rome, Hippo and Carthage and the Canon",
+        "Deuterocanonical Books"
+      ]
+    },
+    {
+      "id": "pat-chrysostom",
+      "author": "John Chrysostom",
+      "work": "Biblical Homilies; On the Priesthood",
+      "date": "c. AD 380–407",
+      "era": "Post-Nicene",
+      "kind": "Primary patristic corpus",
+      "topics": [
+        "Priesthood",
+        "Eucharist",
+        "Scripture",
+        "Moral Life"
+      ],
+      "primary_url": "https://www.ccel.org/fathers",
+      "reader_url": "https://www.newadvent.org/fathers/",
+      "license": "ANF/NPNF English translations are public-domain historical editions; verify against modern critical editions for publication-level scholarship.",
+      "status": "Indexed",
+      "notes": "CCEL provides proofed electronic ANF/NPNF texts; New Advent is used as a convenient Catholic reader-facing access layer.",
+      "provenance_class": "Primary Text",
+      "related_topics": [
+        "Melchizedek, Priesthood and Eucharist",
+        "Early Christians and the Eucharist",
+        "Eucharist / Holy Communion",
+        "Manna and the Eucharist",
+        "The Eucharist as Sacrifice",
+        "The Eucharist: “Jesus Was Only Speaking Symbolically”"
+      ]
+    },
+    {
+      "id": "mag-ccc",
+      "author": "Catholic Church",
+      "work": "Catechism of the Catholic Church",
+      "date": "1992 / current official web text",
+      "era": "Magisterium",
+      "kind": "Official Catholic teaching",
+      "topics": [
+        "All doctrine",
+        "Scripture",
+        "Tradition",
+        "Fathers",
+        "Liturgy"
+      ],
+      "primary_url": "https://www.vatican.va/content/catechism/en.html",
+      "reader_url": "",
+      "license": "Official Holy See text; link/cite rather than relicense.",
+      "status": "Indexed",
+      "notes": "The Catechism identifies Scripture, Fathers, liturgy, and Magisterium among its principal sources.",
+      "provenance_class": "Corpus / Index",
+      "related_topics": [
+        "Scripture, Tradition and Magisterium Together",
+        "2 Timothy 3:16–17 and the Sufficiency Question",
+        "Acts 17:11 and the Bereans",
+        "Clement of Rome and Apostolic Ministry",
+        "Councils of Rome, Hippo and Carthage and the Canon",
+        "Deuterocanonical Books"
+      ]
+    },
+    {
+      "id": "mag-tradition",
+      "author": "Catholic Church",
+      "work": "CCC 75–83: Apostolic Tradition",
+      "date": "1992",
+      "era": "Magisterium",
+      "kind": "Official Catholic teaching",
+      "topics": [
+        "Apostolic Tradition",
+        "Apostolic Succession",
+        "Scripture & Tradition"
+      ],
+      "primary_url": "https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/artcile_2/i_the_apostolic_tradition.html",
+      "reader_url": "",
+      "license": "Official Holy See text.",
+      "status": "Indexed",
+      "notes": "",
+      "provenance_class": "Corpus / Index",
+      "related_topics": [
+        "Apostolic Succession",
+        "Apostolic Succession: “Authority Ended With the Apostles”",
+        "Early Christians and Apostolic Succession",
+        "Irenaeus, Polycarp and Apostolic Succession",
+        "Scripture, Tradition and Magisterium Together",
+        "The Septuagint and the Apostolic Church"
+      ]
+    },
+    {
+      "id": "mag-apostolic",
+      "author": "Catholic Church",
+      "work": "CCC 857–865: The Church is Apostolic",
+      "date": "1992",
+      "era": "Magisterium",
+      "kind": "Official Catholic teaching",
+      "topics": [
+        "Apostolic Succession",
+        "Bishops",
+        "Church"
+      ],
+      "primary_url": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_three/article_9/paragraph_3_the_church_is_one%2C_holy%2C_catholic%2C_and_apostolic.html",
+      "reader_url": "",
+      "license": "Official Holy See text.",
+      "status": "Indexed",
+      "notes": "",
+      "provenance_class": "Corpus / Index",
+      "related_topics": [
+        "Apostolic Succession",
+        "Apostolic Succession: “Authority Ended With the Apostles”",
+        "Early Christians and Apostolic Succession",
+        "Irenaeus, Polycarp and Apostolic Succession",
+        "Apostolic Church",
+        "Clement of Rome and Apostolic Ministry"
+      ]
+    },
+    {
+      "id": "src-fordham",
+      "author": "Fordham University",
+      "work": "Internet History Sourcebooks — Church Councils / Fathers",
+      "date": "Modern index",
+      "era": "Research aid",
+      "kind": "Historical source index",
+      "topics": [
+        "Councils",
+        "Fathers",
+        "Church History"
+      ],
+      "primary_url": "https://sourcebooks.web.fordham.edu/sbook2.asp",
+      "reader_url": "",
+      "license": "Index includes historical public-domain translations; Fordham warns modern critical editions should be consulted for serious academic publication.",
+      "status": "Indexed",
+      "notes": "Use as discovery/access layer, not as sole authority for critical text.",
+      "provenance_class": "Corpus / Index",
+      "related_topics": [
+        "Clement of Rome and Apostolic Ministry",
+        "Councils of Rome, Hippo and Carthage and the Canon",
+        "Early Christians and Apostolic Succession",
+        "Early Christians and the Eucharist",
+        "Ecumenical Councils",
+        "Ignatius of Antioch and the Catholic Church"
+      ]
+    },
+    {
+      "id": "src-ccel",
+      "author": "Christian Classics Ethereal Library",
+      "work": "Early Church Fathers — ANF/NPNF",
+      "date": "Electronic edition",
+      "era": "Research corpus",
+      "kind": "Patristic corpus",
+      "topics": [
+        "Fathers",
+        "Councils",
+        "Biblical Commentary"
+      ],
+      "primary_url": "https://ccel.org/fathers",
+      "reader_url": "",
+      "license": "Historical ANF/NPNF translations are public-domain editions; CCEL electronic presentation has its own terms.",
+      "status": "Indexed",
+      "notes": "CCEL states the electronic series was carefully proofed and converted to ThML.",
+      "provenance_class": "Corpus / Index",
+      "related_topics": [
+        "Clement of Rome and Apostolic Ministry",
+        "Early Christians and Apostolic Succession",
+        "Early Christians and the Eucharist",
+        "Ignatius of Antioch and the Catholic Church",
+        "Irenaeus, Polycarp and Apostolic Succession",
+        "Justin Martyr and Early Christian Worship"
+      ]
+    },
+    {
+      "id": "pat-tatian",
+      "author": "Tatian",
+      "work": "Address to the Greeks",
+      "date": "c. AD 170",
+      "era": "Second-century Apologists",
+      "kind": "Primary patristic text",
+      "topics": ["Apologetics", "Christology", "Scripture"],
+      "primary_url": "https://www.newadvent.org/fathers/0202.htm",
+      "reader_url": "",
+      "license": "Historic ANF translation presented by New Advent; consult critical editions for academic publication.",
+      "status": "Indexed",
+      "notes": "Work-level record. VCS links the primary-text reader and preserves the distinction between an early apologetic witness and later doctrinal formulation.",
+      "provenance_class": "Primary Text",
+      "related_topics": ["Historical Myth: “Nicaea Invented the Divinity of Jesus”", "Islam: “Jesus Is Only a Prophet, Not Divine”", "Dialogue & Debate: Burden of Proof, Definitions & Concessions"]
+    },
+    {
+      "id": "pat-theophilus",
+      "author": "Theophilus of Antioch",
+      "work": "To Autolycus",
+      "date": "c. AD 180",
+      "era": "Second-century Apologists",
+      "kind": "Primary patristic text",
+      "topics": ["Apologetics", "God", "Scripture", "Creation"],
+      "primary_url": "https://www.newadvent.org/fathers/0204.htm",
+      "reader_url": "",
+      "license": "Historic ANF translation presented by New Advent; consult critical editions for academic publication.",
+      "status": "Indexed",
+      "notes": "Work-level record. VCS indexes this second-century apologetic source as a research lead and does not infer later technical terminology from it.",
+      "provenance_class": "Primary Text",
+      "related_topics": ["Islam: “The Trinity Means Christians Worship Three Gods”", "Islam: “Jesus Is Only a Prophet, Not Divine”", "Historical Myth: “Nicaea Invented the Divinity of Jesus”"]
+    },
+    {
+      "id": "pat-minucius",
+      "author": "Minucius Felix",
+      "work": "Octavius",
+      "date": "late second / early third century",
+      "era": "Early Latin Apologists",
+      "kind": "Primary patristic text",
+      "topics": ["Apologetics", "Christian Worship", "Pagan Critiques"],
+      "primary_url": "https://www.newadvent.org/fathers/0410.htm",
+      "reader_url": "",
+      "license": "Historic ANF translation presented by New Advent; consult critical editions for academic publication.",
+      "status": "Indexed",
+      "notes": "Work-level record for early Latin Christian apologetics and the kinds of public objections addressed before the fourth century.",
+      "provenance_class": "Primary Text",
+      "related_topics": ["Historical Claim: “Catholicism Is Paganism with Christian Names”", "Constantine / Nicaea: “Constantine Created the Catholic Church”", "Dialogue & Debate: From Rebuttal to Invitation"]
+    },
+    {
+      "id": "pat-lactantius",
+      "author": "Lactantius",
+      "work": "The Divine Institutes",
+      "date": "c. AD 304–313",
+      "era": "Pre-Nicene / Constantinian Transition",
+      "kind": "Primary patristic text",
+      "topics": ["Apologetics", "Christology", "Christian Ethics"],
+      "primary_url": "https://www.newadvent.org/fathers/0701.htm",
+      "reader_url": "",
+      "license": "Historic ANF translation presented by New Advent; consult critical editions for academic publication.",
+      "status": "Indexed",
+      "notes": "Work-level record at the pre-Nicene / Constantinian transition. It is indexed for context, not as evidence that later conciliar formulations were already stated in identical terms.",
+      "provenance_class": "Primary Text",
+      "related_topics": ["Constantine / Nicaea: “Constantine Created the Catholic Church”", "Historical Myth: “Nicaea Invented the Divinity of Jesus”", "Islam: “Jesus Is Only a Prophet, Not Divine”"]
+    }
+  ]
+}
