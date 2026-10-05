@@ -1,0 +1,102 @@
+{
+  "module_count": 12,
+  "records": [
+    {
+      "module_id": "catechism-essentials-revelation",
+      "title": "God reveals himself",
+      "ccc_range": "CCC 26–184",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-trinity",
+      "title": "The Triune God",
+      "ccc_range": "CCC 232–267",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-creation",
+      "title": "Creation, the human person, and the fall",
+      "ccc_range": "CCC 279–421",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-jesus",
+      "title": "Jesus Christ and the work of salvation",
+      "ccc_range": "CCC 422–682",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-church",
+      "title": "The Holy Catholic Church",
+      "ccc_range": "CCC 748–975",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-baptism-confirmation",
+      "title": "Baptism and Confirmation",
+      "ccc_range": "CCC 1210–1321",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_two.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-eucharist",
+      "title": "The Eucharist",
+      "ccc_range": "CCC 1322–1419",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_two.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-reconciliation",
+      "title": "Reconciliation and anointing of the sick",
+      "ccc_range": "CCC 1420–1532",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_two.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-virtue",
+      "title": "Virtue, sin, and grace",
+      "ccc_range": "CCC 1803–2005",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_three.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-commandments",
+      "title": "The Ten Commandments in the New Covenant",
+      "ccc_range": "CCC 2052–2557",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_three.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-call-to-prayer",
+      "title": "The universal call to prayer",
+      "ccc_range": "CCC 2558–2565",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_four.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    },
+    {
+      "module_id": "catechism-essentials-our-father",
+      "title": "The Lord's Prayer",
+      "ccc_range": "CCC 2759–2865",
+      "existing_official_entry_url": "https://www.vatican.va/content/catechism/en/part_four.html",
+      "link_requirement": "Show the official entry link with an explicit label. Paragraph-specific deep links require an editorial confirmation of the exact topic-to-paragraph scope before release.",
+      "scripture_link_requirement": "Render canonical passage links to the official public Scripture provider after the target verse/range is validated."
+    }
+  ],
+  "boundary": "Module-level official links are ready. Paragraph-specific deep links are deliberately held for editorial confirmation rather than guessed from broad CCC ranges."
+}

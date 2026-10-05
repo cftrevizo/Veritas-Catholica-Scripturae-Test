@@ -1,0 +1,115 @@
+{
+  "scope": "Technical source-link readiness for the twelve previously unnamed Timeline events. This does not change event data.",
+  "source_candidate_count": 6,
+  "manual_source_selection_count": 6,
+  "records": [
+    {
+      "event_id": "ot-david",
+      "event_title": "Davidic kingdom and covenant",
+      "source_candidate": {
+        "url": "https://bible.usccb.org/bible/historicalintroduction/0",
+        "title": "USCCB Historical Introduction",
+        "tier": "official Catholic Scripture resource",
+        "coverage": "Davidic monarchy and Deuteronomistic historical framing",
+        "status": "Ready for contextual citation; retain approximate-date label."
+      }
+    },
+    {
+      "event_id": "ot-return",
+      "event_title": "Persian period and return from exile",
+      "source_candidate": {
+        "url": "https://bible.usccb.org/bible/ezra/0",
+        "title": "USCCB Ezra introduction",
+        "tier": "official Catholic Scripture resource",
+        "coverage": "Persian-period restoration after exile",
+        "status": "Ready for contextual citation; do not present the date as more precise than the source supports."
+      }
+    },
+    {
+      "event_id": "ot-second-temple",
+      "event_title": "Second Temple completed",
+      "source_candidate": {
+        "url": "https://bible.usccb.org/bible/ezra/6",
+        "title": "USCCB Ezra chapter 6",
+        "tier": "official Catholic Scripture resource",
+        "coverage": "Completion and dedication of the Jerusalem Temple",
+        "status": "Ready for narrative-context citation; retain approximate-date label."
+      }
+    },
+    {
+      "event_id": "ot-dedication",
+      "event_title": "Temple rededication",
+      "source_candidate": {
+        "url": "https://bible.usccb.org/bible/1maccabees/4",
+        "title": "USCCB 1 Maccabees chapter 4",
+        "tier": "official Catholic Scripture resource",
+        "coverage": "Temple rededication narrative",
+        "status": "Ready for narrative-context citation; historical framing remains distinct from doctrinal use."
+      }
+    },
+    {
+      "event_id": "nt-incarnation",
+      "event_title": "Birth of Jesus Christ",
+      "source_candidate": null,
+      "manual_source_selection_needed": true,
+      "reason": "Exact historical dating or Church-history framing requires a source selection rather than an inferred generic link."
+    },
+    {
+      "event_id": "nt-ministry",
+      "event_title": "Public ministry of Jesus",
+      "source_candidate": null,
+      "manual_source_selection_needed": true,
+      "reason": "Exact historical dating or Church-history framing requires a source selection rather than an inferred generic link."
+    },
+    {
+      "event_id": "nt-paschal",
+      "event_title": "Passion, Resurrection and Ascension",
+      "source_candidate": null,
+      "manual_source_selection_needed": true,
+      "reason": "Exact historical dating or Church-history framing requires a source selection rather than an inferred generic link."
+    },
+    {
+      "event_id": "nt-pentecost",
+      "event_title": "Pentecost and public apostolic mission",
+      "source_candidate": null,
+      "manual_source_selection_needed": true,
+      "reason": "Exact historical dating or Church-history framing requires a source selection rather than an inferred generic link."
+    },
+    {
+      "event_id": "nt-peter-paul",
+      "event_title": "Martyrdoms of Peter and Paul",
+      "source_candidate": null,
+      "manual_source_selection_needed": true,
+      "reason": "Exact historical dating or Church-history framing requires a source selection rather than an inferred generic link."
+    },
+    {
+      "event_id": "nt-temple70",
+      "event_title": "Destruction of Jerusalem and the Second Temple",
+      "source_candidate": {
+        "url": "https://bible.usccb.org/bible/historicalintroduction/0",
+        "title": "USCCB Historical Introduction",
+        "tier": "official Catholic Scripture resource",
+        "coverage": "Biblical historical framing through the fall of Judah; not a dedicated AD 70 source",
+        "status": "Keep as a source gap; candidate is contextual only and is not sufficient for the AD 70 event."
+      }
+    },
+    {
+      "event_id": "ch-gregorian",
+      "event_title": "Gregorian Reform",
+      "source_candidate": null,
+      "manual_source_selection_needed": true,
+      "reason": "Exact historical dating or Church-history framing requires a source selection rather than an inferred generic link."
+    },
+    {
+      "event_id": "ch-francis",
+      "event_title": "Mendicant renewal",
+      "source_candidate": {
+        "url": "https://www.vatican.va/content/benedict-xvi/en/audiences/2010/documents/hf_ben-xvi_aud_20100127.html",
+        "title": "Benedict XVI General Audience on Saint Francis of Assisi",
+        "tier": "Holy See catechesis",
+        "coverage": "Francis, his conversion, 1209 Rome visit, and ecclesial renewal",
+        "status": "Ready for Church-history contextual citation; retain early-13th-century precision label."
+      }
+    }
+  ]
+}

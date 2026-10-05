@@ -1,0 +1,28 @@
+{
+  "scope": "Required test criteria for the next deployable 1.10 package.",
+  "checks": {
+    "catechism_essentials": [
+      "Each module has one descriptive H1 and ordered module headings.",
+      "Official CCC links have descriptive text and open the intended official page.",
+      "Scripture links expose book, chapter, and verse/range in accessible names.",
+      "Progress state works by keyboard and is announced without relying on color alone."
+    ],
+    "relationship_catalog": [
+      "Every visible relationship includes its stable record ID and provenance limitation.",
+      "Filter changes announce result counts to screen readers.",
+      "Downloadable packets include the validation questions and moderation boundary.",
+      "No label calls a Review relationship verified, peer-reviewed, direct quotation, or doctrine without a specific approved source tier."
+    ],
+    "community_feedback": [
+      "Form validation errors identify the affected field and preserve the user response.",
+      "Submission acknowledgement explains moderation status and does not imply publication.",
+      "Keyboard-only completion and mobile layout pass.",
+      "A published privacy and copyright notice is linked immediately before submission."
+    ],
+    "timeline": [
+      "Traditional and approximate dates include visible precision labels.",
+      "Event source tier and link are available in the selected-event panel.",
+      "Events without a selected source display a review-needed label rather than a blank authority cue."
+    ]
+  }
+}

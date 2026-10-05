@@ -1,0 +1,743 @@
+{
+  "title": "Catechism Essentials",
+  "module_count": 12,
+  "source_boundary": "VCS supplies a curated route, paragraph references, and official links. It does not reproduce the Catechism's copyrighted text. The Catechism of the Catholic Church is the doctrinal authority for this path.",
+  "implementation_boundary": "Preparation data only. This file does not change the public site.",
+  "modules": [
+    {
+      "id": "catechism-essentials-revelation",
+      "order": 1,
+      "source_module_id": "revelation",
+      "part": "Part One: The Profession of Faith",
+      "title": "God reveals himself",
+      "ccc_range": "CCC 26–184",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "vcs_topic_links": [
+        "Divine Revelation: How God Makes Himself Known",
+        "Sacred Tradition",
+        "Scripture, Tradition and Magisterium Together"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Rom 1:19-20",
+          "canonical": "ROM.1.19"
+        },
+        {
+          "label": "Heb 1:1-2",
+          "canonical": "HEB.1.1"
+        },
+        {
+          "label": "Jn 1:14-18",
+          "canonical": "JHN.1.14"
+        },
+        {
+          "label": "Mt 28:19-20",
+          "canonical": "MAT.28.19"
+        },
+        {
+          "label": "2 Thess 2:15",
+          "canonical": "2TH.2.15"
+        },
+        {
+          "label": "1 Cor 11:2",
+          "canonical": "1CO.11.2"
+        },
+        {
+          "label": "2 Tim 2:2",
+          "canonical": "2TI.2.2"
+        },
+        {
+          "label": "Jn 20:30",
+          "canonical": "JHN.20.30"
+        },
+        {
+          "label": "Jn 21:25",
+          "canonical": "JHN.21.25"
+        },
+        {
+          "label": "1 Tim 3:15",
+          "canonical": "1TI.3.15"
+        },
+        {
+          "label": "Acts 15:1-29",
+          "canonical": "ACT.15.1"
+        },
+        {
+          "label": "2 Pet 3:15-16",
+          "canonical": "2PE.3.15"
+        }
+      ],
+      "common_question_prompts": [
+        "How does God reveal himself?",
+        "What is Sacred Tradition?",
+        "How do Scripture, Tradition, and the Magisterium belong together?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-trinity",
+      "order": 2,
+      "source_module_id": "trinity",
+      "part": "Part One: The Profession of Faith",
+      "title": "The Triune God",
+      "ccc_range": "CCC 232–267",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "vcs_topic_links": [
+        "The Trinity"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Mt 28:19",
+          "canonical": "MAT.28.19"
+        },
+        {
+          "label": "Jn 1:1",
+          "canonical": "JHN.1.1"
+        },
+        {
+          "label": "Jn 8:58-59",
+          "canonical": "JHN.8.58"
+        },
+        {
+          "label": "Jn 10:30",
+          "canonical": "JHN.10.30"
+        },
+        {
+          "label": "Jn 20:28",
+          "canonical": "JHN.20.28"
+        },
+        {
+          "label": "Col 2:9",
+          "canonical": "COL.2.9"
+        }
+      ],
+      "common_question_prompts": [
+        "What does the Church mean by one God in three Persons?",
+        "Why is the Trinity central to Christian faith?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-creation",
+      "order": 3,
+      "source_module_id": "creation",
+      "part": "Part One: The Profession of Faith",
+      "title": "Creation, the human person, and the fall",
+      "ccc_range": "CCC 279–421",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "vcs_topic_links": [
+        "Creation and Providence"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Gen 1:1",
+          "canonical": "GEN.1.1"
+        },
+        {
+          "label": "Wis 11:24-26",
+          "canonical": "WIS.11.24"
+        },
+        {
+          "label": "Mt 6:25-34",
+          "canonical": "MAT.6.25"
+        },
+        {
+          "label": "Col 1:16-17",
+          "canonical": "COL.1.16"
+        }
+      ],
+      "common_question_prompts": [
+        "What does the Church profess about creation?",
+        "What does the fall mean for the human person?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-jesus",
+      "order": 4,
+      "source_module_id": "jesus",
+      "part": "Part One: The Profession of Faith",
+      "title": "Jesus Christ and the work of salvation",
+      "ccc_range": "CCC 422–682",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "vcs_topic_links": [
+        "Divinity of Jesus",
+        "The Resurrection of Jesus"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Acts 20:28",
+          "canonical": "ACT.20.28"
+        },
+        {
+          "label": "Jn 1:1",
+          "canonical": "JHN.1.1"
+        },
+        {
+          "label": "Jn 1:14-15",
+          "canonical": "JHN.1.14"
+        },
+        {
+          "label": "Jn 8:19",
+          "canonical": "JHN.8.19"
+        },
+        {
+          "label": "Jn 8:58-59",
+          "canonical": "JHN.8.58"
+        },
+        {
+          "label": "Jn 10:30-33",
+          "canonical": "JHN.10.30"
+        },
+        {
+          "label": "Ex 3:14, 20",
+          "canonical": "EXO.3.14"
+        },
+        {
+          "label": "Lev 19:12, 24",
+          "canonical": "LEV.19.12"
+        },
+        {
+          "label": "Jn 10:38",
+          "canonical": "JHN.10.38"
+        },
+        {
+          "label": "Jn 12:45",
+          "canonical": "JHN.12.45"
+        },
+        {
+          "label": "Jn 14:8-12",
+          "canonical": "JHN.14.8"
+        },
+        {
+          "label": "Jn 20:28",
+          "canonical": "JHN.20.28"
+        },
+        {
+          "label": "1 Jn 1:7",
+          "canonical": "1JN.1.7"
+        },
+        {
+          "label": "Col 2:9",
+          "canonical": "COL.2.9"
+        }
+      ],
+      "common_question_prompts": [
+        "Who is Jesus Christ?",
+        "Why does Christ's resurrection matter for salvation?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-church",
+      "order": 5,
+      "source_module_id": "church",
+      "part": "Part One: The Profession of Faith",
+      "title": "The Holy Catholic Church",
+      "ccc_range": "CCC 748–975",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_one.html",
+      "vcs_topic_links": [
+        "The Church Christ Founded",
+        "Apostolic Church",
+        "Peter, the Rock and the Keys"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Mt 16:18",
+          "canonical": "MAT.16.18"
+        },
+        {
+          "label": "Mt 18:17-18",
+          "canonical": "MAT.18.17"
+        },
+        {
+          "label": "Mt 28:18-20",
+          "canonical": "MAT.28.18"
+        },
+        {
+          "label": "Acts 2:42",
+          "canonical": "ACT.2.42"
+        },
+        {
+          "label": "1 Tim 3:15",
+          "canonical": "1TI.3.15"
+        },
+        {
+          "label": "Jn 15:16",
+          "canonical": "JHN.15.16"
+        },
+        {
+          "label": "Jn 20:21",
+          "canonical": "JHN.20.21"
+        },
+        {
+          "label": "Jn 10:16",
+          "canonical": "JHN.10.16"
+        },
+        {
+          "label": "Lk 22:29-3",
+          "canonical": "LUK.22.29"
+        },
+        {
+          "label": "Lk 22:32",
+          "canonical": "LUK.22.32"
+        },
+        {
+          "label": "Jn 21:17",
+          "canonical": "JHN.21.17"
+        },
+        {
+          "label": "1 Tim 3:1, 8",
+          "canonical": "1TI.3.1"
+        },
+        {
+          "label": "Eph 4:11",
+          "canonical": "EPH.4.11"
+        },
+        {
+          "label": "Tit 1:5",
+          "canonical": "TIT.1.5"
+        }
+      ],
+      "common_question_prompts": [
+        "Why is the Church apostolic?",
+        "What is the Church's mission?",
+        "What is the role of Peter and his successors?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-baptism-confirmation",
+      "order": 6,
+      "source_module_id": "baptism-confirmation",
+      "part": "Part Two: The Celebration of the Christian Mystery",
+      "title": "Baptism and Confirmation",
+      "ccc_range": "CCC 1210–1321",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_two.html",
+      "vcs_topic_links": [
+        "Baptism",
+        "Baptismal Regeneration",
+        "Infant Baptism"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Mt 28:19",
+          "canonical": "MAT.28.19"
+        },
+        {
+          "label": "Mk 16:16",
+          "canonical": "MRK.16.16"
+        },
+        {
+          "label": "Jn 3:5",
+          "canonical": "JHN.3.5"
+        },
+        {
+          "label": "Acts 2:38–39",
+          "canonical": "ACT.2.38"
+        },
+        {
+          "label": "Acts 22:16",
+          "canonical": "ACT.22.16"
+        },
+        {
+          "label": "Rom 6:3–4",
+          "canonical": "ROM.6.3"
+        },
+        {
+          "label": "1 Pet 3:21",
+          "canonical": "1PE.3.21"
+        },
+        {
+          "label": "Acts 2:38-39",
+          "canonical": "ACT.2.38"
+        },
+        {
+          "label": "Rom 6:4-46",
+          "canonical": "ROM.6.4"
+        },
+        {
+          "label": "1 Cor 6:11",
+          "canonical": "1CO.6.11"
+        },
+        {
+          "label": "Heb 10:22",
+          "canonical": "HEB.10.22"
+        },
+        {
+          "label": "Acts 19:5-6",
+          "canonical": "ACT.19.5"
+        },
+        {
+          "label": "Acts 8:14-17",
+          "canonical": "ACT.8.14"
+        },
+        {
+          "label": "2 Cor 1:21-22",
+          "canonical": "2CO.1.21"
+        }
+      ],
+      "common_question_prompts": [
+        "What does Baptism accomplish?",
+        "Why does the Church baptize infants?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-eucharist",
+      "order": 7,
+      "source_module_id": "eucharist",
+      "part": "Part Two: The Celebration of the Christian Mystery",
+      "title": "The Eucharist",
+      "ccc_range": "CCC 1322–1419",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_two.html",
+      "vcs_topic_links": [
+        "Eucharist / Holy Communion",
+        "The Eucharist as Sacrifice",
+        "Early Christians and the Eucharist"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Jn 6:35–71",
+          "canonical": "JHN.6.35"
+        },
+        {
+          "label": "Mt 26:26–28",
+          "canonical": "MAT.26.26"
+        },
+        {
+          "label": "Lk 22:19–20",
+          "canonical": "LUK.22.19"
+        },
+        {
+          "label": "1 Cor 10:16–17",
+          "canonical": "1CO.10.16"
+        },
+        {
+          "label": "1 Cor 11:23–29",
+          "canonical": "1CO.11.23"
+        },
+        {
+          "label": "Mal 1:11",
+          "canonical": "MAL.1.11"
+        },
+        {
+          "label": "Lk 22:19-20",
+          "canonical": "LUK.22.19"
+        },
+        {
+          "label": "1 Cor 11:23-26",
+          "canonical": "1CO.11.23"
+        },
+        {
+          "label": "Heb 9:24-28",
+          "canonical": "HEB.9.24"
+        },
+        {
+          "label": "1 Cor 10:16-17",
+          "canonical": "1CO.10.16"
+        },
+        {
+          "label": "1 Cor 11:23-29",
+          "canonical": "1CO.11.23"
+        }
+      ],
+      "common_question_prompts": [
+        "What does the Church profess about the Eucharist?",
+        "Why is the Mass described as sacrifice?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-reconciliation",
+      "order": 8,
+      "source_module_id": "reconciliation",
+      "part": "Part Two: The Celebration of the Christian Mystery",
+      "title": "Reconciliation and anointing of the sick",
+      "ccc_range": "CCC 1420–1532",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_two.html",
+      "vcs_topic_links": [
+        "Penance / Reconciliation / Confession",
+        "Redemptive Suffering and Carrying the Cross"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Acts 19:5-6",
+          "canonical": "ACT.19.5"
+        },
+        {
+          "label": "Mt 9:2-8",
+          "canonical": "MAT.9.2"
+        },
+        {
+          "label": "Mt 18:18",
+          "canonical": "MAT.18.18"
+        },
+        {
+          "label": "Jn 20:23",
+          "canonical": "JHN.20.23"
+        },
+        {
+          "label": "Jn 20:22",
+          "canonical": "JHN.20.22"
+        },
+        {
+          "label": "Gen 2:7",
+          "canonical": "GEN.2.7"
+        },
+        {
+          "label": "1 Jn 5:16",
+          "canonical": "1JN.5.16"
+        },
+        {
+          "label": "2 Cor 5:17-20",
+          "canonical": "2CO.5.17"
+        },
+        {
+          "label": "Rev 20:12",
+          "canonical": "REV.20.12"
+        },
+        {
+          "label": "Mt 25:32-46",
+          "canonical": "MAT.25.32"
+        },
+        {
+          "label": "2 Cor 5:10",
+          "canonical": "2CO.5.10"
+        },
+        {
+          "label": "Rom 2:6-10, 13",
+          "canonical": "ROM.2.6"
+        },
+        {
+          "label": "Gal 6:6-10",
+          "canonical": "GAL.6.6"
+        },
+        {
+          "label": "Phil 2:12",
+          "canonical": "PHP.2.12"
+        }
+      ],
+      "common_question_prompts": [
+        "Why does the Church celebrate reconciliation?",
+        "What is anointing of the sick for?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-virtue",
+      "order": 9,
+      "source_module_id": "virtue",
+      "part": "Part Three: Life in Christ",
+      "title": "Virtue, sin, and grace",
+      "ccc_range": "CCC 1803–2005",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_three.html",
+      "vcs_topic_links": [
+        "Theological Virtues: Faith, Hope and Charity",
+        "Grace, Merit and Cooperation with God"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "1 Cor 13:13",
+          "canonical": "1CO.13.13"
+        },
+        {
+          "label": "Gal 5:6",
+          "canonical": "GAL.5.6"
+        },
+        {
+          "label": "Heb 11:1",
+          "canonical": "HEB.11.1"
+        },
+        {
+          "label": "Jn 15:5",
+          "canonical": "JHN.15.5"
+        },
+        {
+          "label": "Phil 2:12-13",
+          "canonical": "PHP.2.12"
+        },
+        {
+          "label": "1 Cor 15:10",
+          "canonical": "1CO.15.10"
+        },
+        {
+          "label": "2 Cor 5:10",
+          "canonical": "2CO.5.10"
+        }
+      ],
+      "common_question_prompts": [
+        "What is grace?",
+        "How do faith, hope, and charity shape Christian life?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-commandments",
+      "order": 10,
+      "source_module_id": "commandments",
+      "part": "Part Three: Life in Christ",
+      "title": "The Ten Commandments in the New Covenant",
+      "ccc_range": "CCC 2052–2557",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_three.html",
+      "vcs_topic_links": [
+        "The Ten Commandments in the New Covenant",
+        "Natural Law and Conscience"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Ex 20:1-17",
+          "canonical": "EXO.20.1"
+        },
+        {
+          "label": "Mt 5:17-20",
+          "canonical": "MAT.5.17"
+        },
+        {
+          "label": "Mt 19:16-19",
+          "canonical": "MAT.19.16"
+        },
+        {
+          "label": "Rom 13:8-10",
+          "canonical": "ROM.13.8"
+        },
+        {
+          "label": "Rom 2:14-16",
+          "canonical": "ROM.2.14"
+        },
+        {
+          "label": "Rom 12:2",
+          "canonical": "ROM.12.2"
+        },
+        {
+          "label": "1 Tim 1:5",
+          "canonical": "1TI.1.5"
+        }
+      ],
+      "common_question_prompts": [
+        "How does Christ fulfill the commandments?",
+        "How is conscience formed?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-call-to-prayer",
+      "order": 11,
+      "source_module_id": "call-to-prayer",
+      "part": "Part Four: Christian Prayer",
+      "title": "The universal call to prayer",
+      "ccc_range": "CCC 2558–2565",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_four.html",
+      "vcs_topic_links": [
+        "Christian Prayer",
+        "Intercessory Prayer of Saints"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Mt 6:5-13",
+          "canonical": "MAT.6.5"
+        },
+        {
+          "label": "Lk 11:1-13",
+          "canonical": "LUK.11.1"
+        },
+        {
+          "label": "1 Thess 5:17",
+          "canonical": "1TH.5.17"
+        },
+        {
+          "label": "Rev 8:3-4",
+          "canonical": "REV.8.3"
+        },
+        {
+          "label": "Jer 15:1",
+          "canonical": "JER.15.1"
+        },
+        {
+          "label": "Rev 1:6, 5",
+          "canonical": "REV.1.6"
+        },
+        {
+          "label": "Rev 5:8",
+          "canonical": "REV.5.8"
+        },
+        {
+          "label": "Rev 6:9-11",
+          "canonical": "REV.6.9"
+        },
+        {
+          "label": "Rev 20:4",
+          "canonical": "REV.20.4"
+        },
+        {
+          "label": "Wis 3:1-6",
+          "canonical": "WIS.3.1"
+        },
+        {
+          "label": "Jn 10:11-16",
+          "canonical": "JHN.10.11"
+        },
+        {
+          "label": "Jn 21:15-16",
+          "canonical": "JHN.21.15"
+        },
+        {
+          "label": "Mt 25:23",
+          "canonical": "MAT.25.23"
+        },
+        {
+          "label": "Mk 10:18",
+          "canonical": "MRK.10.18"
+        }
+      ],
+      "common_question_prompts": [
+        "Why does the Christian pray?",
+        "What is intercession?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    },
+    {
+      "id": "catechism-essentials-our-father",
+      "order": 12,
+      "source_module_id": "our-father",
+      "part": "Part Four: Christian Prayer",
+      "title": "The Lord's Prayer",
+      "ccc_range": "CCC 2759–2865",
+      "official_catechism_url": "https://www.vatican.va/content/catechism/en/part_four.html",
+      "vcs_topic_links": [
+        "Christian Prayer"
+      ],
+      "scripture_companion_candidates": [
+        {
+          "label": "Mt 6:5-13",
+          "canonical": "MAT.6.5"
+        },
+        {
+          "label": "Lk 11:1-13",
+          "canonical": "LUK.11.1"
+        },
+        {
+          "label": "1 Thess 5:17",
+          "canonical": "1TH.5.17"
+        }
+      ],
+      "common_question_prompts": [
+        "Why is the Lord's Prayer the model of Christian prayer?",
+        "How does the Our Father shape daily discipleship?"
+      ],
+      "summary_status": "Use existing VCS topic summaries as review inputs. Author one concise original module summary before public release.",
+      "review_status": "Needs ecclesial/editorial review before public use."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "dataset": "review.json",
+  "record_count": 673,
+  "current_provenance_token": "NA27-authored",
+  "public_label": "Review relationship from a source-documented dataset",
+  "required_before_public_submission": [
+    "A citable dataset description or bibliography explaining the NA27-authored token.",
+    "A version identifier, retrieval date, license/permission note, and relationship-typing methodology.",
+    "A distinct display label for review leads that avoids implying quotation, peer review, doctrine, or scholarly consensus."
+  ],
+  "current_status": "Bibliographic bridge not yet supplied; public catalog may be read-only and must show the provenance limitation.",
+  "allowed_current_use": "Discovery and editorial review only; not a verified relationship claim."
+}
