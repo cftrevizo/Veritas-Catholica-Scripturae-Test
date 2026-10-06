@@ -1,0 +1,510 @@
+{
+  "schema_version": "1.0",
+  "title": "VCS Catholic Scholarly & Apologetics Research Index",
+  "purpose": "Compact, source-attributed research access for VCS Study Topics. Source documents are used as supporting research and do not replace Scripture, the Catechism, Magisterial texts, or primary historical sources.",
+  "records": [
+    {
+      "id": "SRC-005",
+      "title": "04 __Comprehensive Bible Cheat Sheet",
+      "source_class": "VCS structured study guide",
+      "role": "Secondary guide",
+      "summary": "Broad Scripture cheat sheet organized around Catholic doctrines and common objections. Use as a verse-discovery aid, not as final doctrinal authority.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": [
+        "A Visible Church and Christian Unity",
+        "Baptismal Regeneration",
+        "Eucharist / Holy Communion",
+        "Intercessory Prayer of Saints",
+        "Mary and the Saints: “Catholics Worship Mary or the Saints”",
+        "Peter, the Rock and the Keys",
+        "Purgatory",
+        "Sacred Tradition",
+        "Sola Fide: Faith, Works and Justification",
+        "Sola Scriptura / Bible Alone",
+        "The Deuterocanon: “Catholics Added Books to the Bible”",
+        "The Liturgy and Heavenly Worship",
+        "The Magisterium",
+        "The Papacy: “Peter Had No Unique Office”"
+      ]
+    },
+    {
+      "id": "SRC-006",
+      "title": "05 Catechism_Citations_50_Common_Objections",
+      "source_class": "Primary / normative source",
+      "role": "Primary catechetical index",
+      "summary": "Paragraph-level Catechism cross-reference index for the 50 common Protestant objections; pairs with Topics 1-50.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": []
+    },
+    {
+      "id": "SRC-007",
+      "title": "06 Catholic_Apologetics_50_Common_Objections",
+      "source_class": "VCS structured study guide",
+      "role": "Structured topic source",
+      "summary": "Fifty common Protestant objections with Scripture, a concise Catholic response, a conversational walkthrough, and Catechism references.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": []
+    },
+    {
+      "id": "SRC-008",
+      "title": "07 Catholic_Apologetics_100_Additional_Topics",
+      "source_class": "VCS structured study guide",
+      "role": "Structured topic source",
+      "summary": "One hundred additional apologetics topics (51-150) with concise Scripture, Catechism, and Catholic-response fields.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": []
+    },
+    {
+      "id": "SRC-009",
+      "title": "08 Catholic_Bible_73_Books_Cheat_Sheet",
+      "source_class": "VCS structured study guide",
+      "role": "Formation guide",
+      "summary": "Catholic 73-book overview with authorship, date, audience, themes, and doctrinal reading notes.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": [
+        "Historical Myth: “The Catholic Church Invented the Bible”",
+        "Revelation 22:18 and the Biblical Canon",
+        "The Biblical Canon: Why 73 Books?",
+        "The Deuterocanon: “Catholics Added Books to the Bible”"
+      ]
+    },
+    {
+      "id": "SRC-010",
+      "title": "09 Catholic_Church_Reforms_Study_Guide",
+      "source_class": "VCS structured study guide",
+      "role": "Formation guide",
+      "summary": "Study guide on Catholic Church reform movements and historical reform versus rupture.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": [
+        "Constantine / Nicaea: “Constantine Created the Catholic Church”",
+        "Perpetuity of the Church",
+        "Protestant: “The Church Disappeared Until the Reformation”"
+      ]
+    },
+    {
+      "id": "SRC-011",
+      "title": "10 Catholic_Recognized_Miracles_and_Apparitions_Study_Guide",
+      "source_class": "VCS structured study guide",
+      "role": "Formation guide",
+      "summary": "Study guide on recognized miracles and apparitions; distinguish Church approval from doctrine and from private belief.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": [
+        "Private Revelation and Marian Apparitions"
+      ]
+    },
+    {
+      "id": "SRC-012",
+      "title": "11 Early_Church_First_150_Years_Study_Guide",
+      "source_class": "VCS structured study guide",
+      "role": "Formation guide",
+      "summary": "Study guide for the first 150 years of Christianity, especially apostolic continuity and early witnesses.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": [
+        "A Visible Church and Christian Unity",
+        "Constantine / Nicaea: “Constantine Created the Catholic Church”",
+        "Eucharist / Holy Communion",
+        "Historical Myth: “Nicaea Invented the Divinity of Jesus”",
+        "Historical Myth: “The Catholic Church Invented the Bible”",
+        "Perpetuity of the Church",
+        "Protestant: “The Church Disappeared Until the Reformation”",
+        "The Liturgy and Heavenly Worship",
+        "The Papacy: “Peter Had No Unique Office”"
+      ]
+    },
+    {
+      "id": "SRC-013",
+      "title": "12 Old_Testament_Texts_Septuagint_Masoretic_Study_Guide",
+      "source_class": "VCS structured study guide",
+      "role": "Formation guide",
+      "summary": "Study guide on Old Testament textual traditions, including Septuagint and Masoretic questions.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": [
+        "Revelation 22:18 and the Biblical Canon",
+        "The Biblical Canon: Why 73 Books?",
+        "The Deuterocanon: “Catholics Added Books to the Bible”"
+      ]
+    },
+    {
+      "id": "SRC-014",
+      "title": "13 _Dogmas 5 Most Common Myths About The Bible And The Catholic Church Against The Heresies ",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary guide",
+      "summary": "Five recurring myths about the Bible and Catholic Church, with brief Catholic counterpoints.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Historical Myth: “The Catholic Church Invented the Bible”",
+        "Sola Scriptura / Bible Alone",
+        "The Biblical Canon: Why 73 Books?",
+        "The Deuterocanon: “Catholics Added Books to the Bible”"
+      ]
+    },
+    {
+      "id": "SRC-015",
+      "title": "14 Answering The Protestant Argument Of Church Apostatize",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Arguments against the claim that Christ's Church completely apostatized and had to be restored.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Constantine / Nicaea: “Constantine Created the Catholic Church”",
+        "Perpetuity of the Church",
+        "Protestant: “The Church Disappeared Until the Reformation”"
+      ]
+    },
+    {
+      "id": "SRC-016",
+      "title": "15 Catholic Responses To Protestant Arguments Against Apocrypha ",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Responses to Protestant objections to the Deuterocanon/\"Apocrypha\".",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Purgatory",
+        "Purgatory: “There Is No Purification After Death”",
+        "Revelation 22:18 and the Biblical Canon",
+        "The Biblical Canon: Why 73 Books?",
+        "The Deuterocanon: “Catholics Added Books to the Bible”"
+      ]
+    },
+    {
+      "id": "SRC-017",
+      "title": "16 Qa How Are The Saints In Heaven Made Aware Of Our Prayers From Against The Heresies",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Explains the Catholic case for the saints in heaven knowing and joining Christian prayer.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Do the Saints Hear Our Prayers?",
+        "Intercessory Prayer of Saints"
+      ]
+    },
+    {
+      "id": "SRC-018",
+      "title": "17 Response To Protestant Attack On Mary Leonard Alt",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Response to Protestant objections concerning Mary.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Immaculate Conception",
+        "Intercessory Prayer of Saints",
+        "Mary and the Saints: “Catholics Worship Mary or the Saints”",
+        "Mary, Mother of God",
+        "The Hail Mary in Scripture"
+      ]
+    },
+    {
+      "id": "SRC-019",
+      "title": "18 Since Christ Desires True Unity Among Believers... Question And Responses",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Question-and-response treatment of Christian unity and the visible Church.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "A Visible Church and Christian Unity"
+      ]
+    },
+    {
+      "id": "SRC-020",
+      "title": "19 Purgatory Is In The Bible Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Scriptural case for purgatory, framed as post-death purification rather than a second chance.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Prayer for the Dead",
+        "Purgatory"
+      ]
+    },
+    {
+      "id": "SRC-021",
+      "title": "20 Sola Scriptura In The Bible Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Scriptural critique of sola scriptura and a positive account of apostolic Tradition.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "2 Timothy 3:16–17 and the Sufficiency Question",
+        "Acts 17:11 and the Bereans",
+        "Sacred Tradition",
+        "Sola Scriptura / Bible Alone",
+        "The Magisterium"
+      ]
+    },
+    {
+      "id": "SRC-022",
+      "title": "21 Scriptures Supporting Purgatory on FB David Valpuesta ",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary reference",
+      "summary": "Condensed Scripture collection supporting prayer for the dead and purification.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Prayer for the Dead",
+        "Purgatory"
+      ]
+    },
+    {
+      "id": "SRC-023",
+      "title": "22 Catholic Biblical Apologetics Schihl And Flanagan 3",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary reference",
+      "summary": "Large general Catholic biblical apologetics compendium; use for topic discovery, then verify claims with Scripture, CCC, and primary historical sources.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Baptismal Regeneration",
+        "Eucharist / Holy Communion",
+        "Intercessory Prayer of Saints",
+        "Mary and the Saints: “Catholics Worship Mary or the Saints”",
+        "Purgatory",
+        "Seven Sacraments Instituted by Christ",
+        "Sola Fide: Faith, Works and Justification",
+        "Sola Scriptura / Bible Alone",
+        "The Deuterocanon: “Catholics Added Books to the Bible”",
+        "The Magisterium"
+      ]
+    },
+    {
+      "id": "SRC-024",
+      "title": "23 The Evolution Of Judaism Into Catholic Christianity Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Connects Judaism, covenant, and Catholic Christianity in a salvation-historical account.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "A Visible Church and Christian Unity",
+        "Sacred Tradition",
+        "The Deuterocanon: “Catholics Added Books to the Bible”",
+        "The Liturgy and Heavenly Worship"
+      ]
+    },
+    {
+      "id": "SRC-025",
+      "title": "24 Catholic Apologetics Guide 101 Godwin Delali Adadzie",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary reference",
+      "summary": "General Catholic apologetics guide covering foundational doctrines and objections.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Eucharist / Holy Communion",
+        "Intercessory Prayer of Saints",
+        "Mary and the Saints: “Catholics Worship Mary or the Saints”",
+        "Purgatory",
+        "Sacred Tradition",
+        "Sola Fide: Faith, Works and Justification",
+        "Sola Scriptura / Bible Alone",
+        "The Deuterocanon: “Catholics Added Books to the Bible”",
+        "The Magisterium"
+      ]
+    },
+    {
+      "id": "SRC-026",
+      "title": "25 Let s Talk About The Rosary Godwin Delali Adadzie",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Explanation and defense of the Rosary as Christ-centered meditation and intercessory prayer.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "The Hail Mary in Scripture",
+        "The Rosary as Christ-Centered Biblical Meditation"
+      ]
+    },
+    {
+      "id": "SRC-027",
+      "title": "26 Martin Luther Venerated The Virgin Mary And Was Very Catholic In His Thinking Against The Heresies Theodore Shoebat",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary historical",
+      "summary": "Discusses Martin Luther's Marian views; use with careful historical-source verification.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Assumption and Coronation of Mary",
+        "Immaculate Conception",
+        "Mary and the Saints: “Catholics Worship Mary or the Saints”"
+      ]
+    },
+    {
+      "id": "SRC-028",
+      "title": "27 A Short Chronology Of How The Bible Came To Be Suli Sakalia Latiume",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary history",
+      "summary": "Brief chronology of how the biblical canon came to be recognized.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Historical Myth: “The Catholic Church Invented the Bible”",
+        "Revelation 22:18 and the Biblical Canon",
+        "The Biblical Canon: Why 73 Books?",
+        "The Deuterocanon: “Catholics Added Books to the Bible”"
+      ]
+    },
+    {
+      "id": "SRC-029",
+      "title": "28 The Canon Of Scripture Against The Heresies",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Apologetics treatment of the canon of Scripture and the Church's role in recognition.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Historical Myth: “The Catholic Church Invented the Bible”",
+        "Revelation 22:18 and the Biblical Canon",
+        "The Biblical Canon: Why 73 Books?",
+        "The Deuterocanon: “Catholics Added Books to the Bible”"
+      ]
+    },
+    {
+      "id": "SRC-030",
+      "title": "29 Why Authority Is Required Cole Parker",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Explains why a teaching authority is necessary for doctrinal unity and interpretation.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "A Visible Church and Christian Unity",
+        "Apostolic Succession",
+        "Authority of the Church",
+        "The Magisterium"
+      ]
+    },
+    {
+      "id": "SRC-031",
+      "title": "30 The Teachings Of The Apostles The Didache",
+      "source_class": "Primary historical text / Catholic research edition",
+      "role": "Primary historical text",
+      "summary": "The Didache: early Christian teaching on moral life, liturgy, baptism, fasting, and Church order.",
+      "publication_note": "Use according to the source register and VCS verification rules.",
+      "study_topics": [
+        "Baptismal Regeneration",
+        "Confirmation",
+        "Sunday Worship and the Lord’s Day",
+        "The Liturgy and Heavenly Worship"
+      ]
+    },
+    {
+      "id": "SRC-032",
+      "title": "31 Why Do Catholics Call Mary The Ark Of The New Covenant ML Lamera",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Explains the Catholic typology of Mary as Ark of the New Covenant.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Assumption and Coronation of Mary",
+        "Immaculate Conception",
+        "Mary and the Saints: “Catholics Worship Mary or the Saints”",
+        "Mary, Mother of God"
+      ]
+    },
+    {
+      "id": "SRC-033",
+      "title": "32 Apostolic Tradition Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Defense of apostolic Tradition as distinct from merely human traditions.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "2 Timothy 3:16–17 and the Sufficiency Question",
+        "Acts 17:11 and the Bereans",
+        "Sacred Tradition",
+        "Sola Scriptura / Bible Alone"
+      ]
+    },
+    {
+      "id": "SRC-034",
+      "title": "33 How Does Purgatory Fit In With 1 John 1 7 Valerie Riggins Fesh",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Explores how purgatory is consistent with Christ's cleansing blood in 1 John 1:7.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Prayer for the Dead",
+        "Purgatory"
+      ]
+    },
+    {
+      "id": "SRC-035",
+      "title": "34 Grace And The Sinlessness Of Mary Against The Heresies ",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Scriptural argument relating grace and the sinlessness of Mary; verify technical claims with CCC and dogmatic sources.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Immaculate Conception"
+      ]
+    },
+    {
+      "id": "SRC-036",
+      "title": "35 Apostolic And Church Authority Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Argument for apostolic and Church authority through Scripture, succession, and early witnesses.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "A Visible Church and Christian Unity",
+        "Apostolic Succession",
+        "Authority of the Church",
+        "Papal Infallibility: What It Actually Means",
+        "Peter, the Rock and the Keys",
+        "The Magisterium",
+        "The Papacy: “Peter Had No Unique Office”"
+      ]
+    },
+    {
+      "id": "SRC-037",
+      "title": "36 Praying With The Saint Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Defense of asking Mary, angels, and saints for intercession while Christ remains the sole mediator.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Do the Saints Hear Our Prayers?",
+        "Intercessory Prayer of Saints"
+      ]
+    },
+    {
+      "id": "SRC-038",
+      "title": "37 The Church That Jesus Left Behind To Carry On His Mission Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Argument that Christ established a visible, apostolic Church with continuing mission and authority.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "A Visible Church and Christian Unity",
+        "Apostolic Succession",
+        "Authority of the Church",
+        "Perpetuity of the Church",
+        "Peter, the Rock and the Keys",
+        "Protestant: “The Church Disappeared Until the Reformation”",
+        "The Magisterium",
+        "The Papacy: “Peter Had No Unique Office”"
+      ]
+    },
+    {
+      "id": "SRC-039",
+      "title": "38 10 Biblical Reasons Christ Founded The Papacy Hhambrose Against The Heresies",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Ten biblical arguments for the papacy, especially Matthew 16 and Isaiah 22 typology.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "Apostolic Succession",
+        "Peter, the Rock and the Keys",
+        "Primacy of Peter",
+        "The Papacy: “Peter Had No Unique Office”"
+      ]
+    },
+    {
+      "id": "SRC-040",
+      "title": "39 The Bible Alone Is Not In The Bible Ken Litchfield",
+      "source_class": "Catholic scholarly & apologetics research",
+      "role": "Secondary apologetics",
+      "summary": "Another biblical critique of sola scriptura emphasizing oral apostolic Tradition and Church interpretation.",
+      "publication_note": "Supporting research: verify individual biblical, Catechism, historical, and quotation claims against their primary sources before public publication.",
+      "study_topics": [
+        "2 Timothy 3:16–17 and the Sufficiency Question",
+        "Acts 17:11 and the Bereans",
+        "Historical Myth: “The Catholic Church Invented the Bible”",
+        "Sacred Tradition",
+        "Sola Scriptura / Bible Alone",
+        "The Biblical Canon: Why 73 Books?",
+        "The Magisterium"
+      ]
+    }
+  ]
+}

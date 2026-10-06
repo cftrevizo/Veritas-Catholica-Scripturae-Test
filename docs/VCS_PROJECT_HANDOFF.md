@@ -1,6 +1,6 @@
 # Veritas Catholica Scripturae — Project Handoff
 
-**Current repository package:** `VCS 1.10.0 C1.3`  
+**Current repository package:** `VCS 1.10.1 Research Integration`  
 **Deployment unit:** the contents of `docs/`  
 **Purpose:** this document is the single resume point for a new VCS work session.
 
@@ -20,6 +20,7 @@ The current C1 public test build includes:
 - **Community Relationship Review**, a read-only, filterable catalog of 673 Deuterocanon ↔ New Testament relationship candidates, with filtered Markdown download;
 - selected Timeline source and date-precision cues;
 - a Sources & Methodology boundary describing the 1.10 C1 test scope.
+- a **Catholic Research Index** with 36 compact research records and 146 curated links to existing Study Topics.
 
 The C1 build does **not** enable public comment or feedback submission. It must remain read-only until the provenance, moderation, privacy, licensing, and review workflow is approved.
 
@@ -31,6 +32,7 @@ The C1 build does **not** enable public comment or feedback submission. It must 
 | 1.10.0 C1.1 | Padre Luis Toro Spanish-first seed index: 6 debate/dialogue, 6 Q&A, 4 general-teaching records | Data-only |
 | 1.10.0 C1.2 | Padre Luis Toro public social-media discovery layer: 12 Facebook discovery records plus YouTube/Facebook/Instagram profile leads | Data-only |
 | 1.10.0 C1.3 | This handoff document and the full current-state resume instructions | Data/documentation only |
+| 1.10.1 Research Integration | Catholic Research Index; 36 compact research records; 146 curated links to 39 existing Study Topics | Implemented in `docs/` |
 
 ## Key data assets
 
@@ -50,6 +52,14 @@ The C1 build does **not** enable public comment or feedback submission. It must 
 - `data/PADRE_LUIS_TORO_INDEX_README.md` and `data/PADRE_LUIS_TORO_SOCIAL_MEDIA_README.md` — required source, attribution, and review boundaries.
 - `VCS_C1_3_RECONSTRUCTION_AUDIT.md` — request-to-artifact trace, validation record, and limits of the C1.3 reconstruction.
 
+### Catholic research integration
+
+- `data/catholic_research_index.json` — compact, browser-ready index of the cleaned Catholic research and formation set; records retain a source class, role, core contribution, publication boundary, and curated links to existing VCS Study Topics.
+- `research-library.html` and `assets/research-library.js` — searchable public research index. The original PDFs/DOCX files are not republished in the website package.
+- `assets/research-access.js` — Study Topic enrichment layer that shows linked research records in a topic's expanded view.
+
+The source class **Catholic scholarly & apologetics research** marks supporting research. It does not make an item Magisterial, peer-reviewed, a primary historical source, or independently verified for public doctrinal claims. The Didache remains differentiated as a primary historical text / Catholic research edition.
+
 Padre Luis records are formation/apologetics discovery sources, not Magisterial authority. Retain the Spanish title and original platform URL. Keep the uploader/source distinct from Padre Luis Toro's actual participation; a fan repost or mirror is never treated as an affiliated or canonical source. Any public VCS use must first verify the source, content, context, timestamp, and an independent Scripture/CCC/primary-source evidence path.
 
 ## Current source rules
@@ -61,6 +71,7 @@ Padre Luis records are formation/apologetics discovery sources, not Magisterial 
 5. Treat social-media and third-party uploads as discovery metadata unless the original source and content are verified.
 6. Do not characterize a source as peer-reviewed merely because it is university-, museum-, or scholarly-looking.
 7. Public feedback, if later added, must be moderated and must not silently become evidence, doctrine, or public content.
+8. Research-index links are curated study leads. Verify Scripture, CCC, historical, and quotation claims in appropriate primary sources before public publication.
 
 ## Editorial/manual items still pending
 
